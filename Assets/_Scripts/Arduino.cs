@@ -33,7 +33,8 @@ public class Arduino : MonoBehaviour
     public VRRig_test vRRig_Test;
     public float brakeDelay = 0.2f;
     public bool canShoot = true;
-    // public TurnOnLight turnOnLight;
+    private float brakeWriteCD = 0.1f;
+    public float nextTimeToWriteBrake;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,8 @@ public class Arduino : MonoBehaviour
         BulletNum_L.text = switchMode_L.maxBullet.ToString();
         MaxBulletNum_R.text = "/ " + switchMode_R.maxBullet.ToString();
         BulletNum_R.text = switchMode_R.maxBullet.ToString();
+
+        nextTimeToWriteBrake = Time.deltaTime + brakeWriteCD;
     }
 
     // Update is called once per frame
@@ -115,7 +118,7 @@ public class Arduino : MonoBehaviour
         }
 
 
-        if (vRRig_Test.rightHand.brake)
+        if (vRRig_Test.rightHand.brake && Time.time >= nextTimeToWriteBrake)
         {
             // Debug.Log(vRRig_Test.rightHand.brake);
             // Invoke("rightHandBrake", brakeDelay);
@@ -124,14 +127,16 @@ public class Arduino : MonoBehaviour
                 sp3.Write("2");  // right hand punch
                 Debug.Log("sp3.Write: 2");
             }
+            nextTimeToWriteBrake = Time.time + brakeWriteCD;
         }
-        if (vRRig_Test.leftHand.brake)
+        if (vRRig_Test.leftHand.brake && Time.time >= nextTimeToWriteBrake)
         {
             if (sp3.IsOpen)
             {
                 sp3.Write("3");  // left hand punch
                 Debug.Log("sp3.Write: 3");
             }
+            nextTimeToWriteBrake = Time.time + brakeWriteCD;
         }
 
 

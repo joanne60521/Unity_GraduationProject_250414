@@ -74,6 +74,8 @@ public class FunctionManage : MonoBehaviour
         // vRRig_Test.enabled = false;
         vRRig_Test.leftHand.attackMode = false;
         vRRig_Test.rightHand.attackMode = false;
+        vRRig_Test.leftHand.brake = false;
+        vRRig_Test.rightHand.brake = false;
         Debug.Log("AllFunctionOff");
     }
     public void AllFunctionOn()

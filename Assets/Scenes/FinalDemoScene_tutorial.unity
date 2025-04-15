@@ -310,11 +310,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 45268aa99fcbf1e40955232c44faf95f,
         type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1531102558}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 45268aa99fcbf1e40955232c44faf95f,
-        type: 3}
-      insertIndex: 22
+      insertIndex: 21
       addedObject: {fileID: 371339494}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45268aa99fcbf1e40955232c44faf95f,
@@ -10545,6 +10541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1531102558}
   - {fileID: 1490468522}
   - {fileID: 1006355367}
   - {fileID: 57877916}
@@ -12059,6 +12056,7 @@ MonoBehaviour:
   vRRig_Test: {fileID: 1167750481}
   brakeDelay: 0.05
   canShoot: 1
+  nextTimeToWriteBrake: 0
 --- !u!4 &1431282205
 Transform:
   m_ObjectHideFlags: 0
@@ -12396,12 +12394,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531102557}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.9, y: 5.79, z: 6.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 23.27, z: -0.5089491}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1831139760}
+  m_Father: {fileID: 1037819451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1531102559
 AudioSource:
