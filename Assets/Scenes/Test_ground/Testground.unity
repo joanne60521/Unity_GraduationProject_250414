@@ -24352,11 +24352,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7170167149299878154, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0018
+      objectReference: {fileID: 0}
+    - target: {fileID: -3200332580850832928, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3200332580850832928, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0017995834
+      objectReference: {fileID: 0}
+    - target: {fileID: -577596980944685764, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ef9a58bfb8859f449e8b0e61bedc392, type: 2}
     - target: {fileID: 919132149155446097, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
         type: 3}
       propertyPath: m_Name
       value: Chair_arm V2 sep 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1764632304480954445, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd2b149e131f07148ba1f06270eb4166, type: 2}
+    - target: {fileID: 4300293480183050541, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd2b149e131f07148ba1f06270eb4166, type: 2}
+    - target: {fileID: 7219272298431961513, guid: 90b0eeca9c4bb6b4a8666f20beee2992,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ef9a58bfb8859f449e8b0e61bedc392, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
