@@ -97,12 +97,6 @@ public class ControlRobotByGyroscope : MonoBehaviour
             transform.eulerAngles += new Vector3(0, turnValue * Time.deltaTime, 0);
             isMoving = true;
         }
-        else
-        {
-            // stop
-            gyState = GyState.Stop;
-            isMoving = false;
-        }
 
 
         RaycastHit hit;

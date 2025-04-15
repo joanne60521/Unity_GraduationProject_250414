@@ -117,8 +117,13 @@ public class Arduino : MonoBehaviour
 
         if (vRRig_Test.rightHand.brake)
         {
-            Debug.Log(vRRig_Test.rightHand.brake);
-            Invoke("rightHandBrake", brakeDelay);
+            // Debug.Log(vRRig_Test.rightHand.brake);
+            // Invoke("rightHandBrake", brakeDelay);
+            if (sp3.IsOpen)
+            {
+                sp3.Write("2");  // right hand punch
+                Debug.Log("sp3.Write: 2");
+            }
         }
         if (vRRig_Test.leftHand.brake)
         {
@@ -151,6 +156,22 @@ public class Arduino : MonoBehaviour
         {
             sp3.Write("2");  // right hand punch
             Debug.Log("sp3.Write: 2");
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (sp3 != null && sp3.IsOpen)
+        {
+            sp3.Close();
+        }
+        
+    }
+    void OnApplicationQuit()
+    {
+        if (sp3 != null && sp3.IsOpen)
+        {
+            sp3.Close();
         }
     }
 }

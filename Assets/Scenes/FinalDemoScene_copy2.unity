@@ -6336,8 +6336,6 @@ MonoBehaviour:
     type: 3}
   rightResetValueRef: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  leftResetRead: 0
-  rightResetRead: 0
 --- !u!1 &538517771 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3491828527579184646, guid: 44d501d6d794cb04cbc664bbde95546c,
@@ -16794,7 +16792,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431282203}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3cec6cb3eb652747a05b8d90fc99c64, type: 3}
   m_Name: 
@@ -28720,7 +28718,7 @@ Transform:
   m_GameObject: {fileID: 7294392325331295568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -40.8, y: -0.89, z: 134.4}
+  m_LocalPosition: {x: -0.4, y: -0.89, z: 296.4}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children:
