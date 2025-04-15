@@ -8,6 +8,7 @@ using TMPro;
 [System.Serializable]  //讓 class VRMap 顯示在 Inspector
 public class VRMap_Hand
 {
+    public ScaleUp ScaleUp;
     public temp temp;
     public Transform vrTarget;
     public Transform rigTarget;
@@ -68,6 +69,12 @@ public class VRMap_Hand
             }else
             {
                 velContinueTime = 0;
+            }
+
+            if (velContinueTime >= velContinueTimeThreshold && distance > distanceThreshold)
+            {
+                ScaleUp.TooFarPunch();
+                Debug.Log("too far");
             }
 
             if (velContinueTime >= velContinueTimeThreshold && distance < distanceThreshold && cameraVisibilityWithViewport.isInView && Time.time > nextunchTime)

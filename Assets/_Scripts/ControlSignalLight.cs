@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class ControlSignalLight : MonoBehaviour
 {
-    public Light[] signalLights;
-    public SpriteRenderer[] spriteRenderers;
+    public Renderer[] signalRenderers;
+    // public SpriteRenderer[] spriteRenderers;
+    public Material[] signalLights;
     public SwitchMode_edit switchMode_L;
     public SwitchMode_edit switchMode_R;
     public Arduino arduino;
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < signalRenderers.Length; i++)
+        {
+            signalLights[i] = signalRenderers[i].material;
+        }
     }
 
     // Update is called once per frame
@@ -20,72 +24,37 @@ public class ControlSignalLight : MonoBehaviour
     {
         if (switchMode_R.gunMode)  // right gun
         {
-            spriteRenderers[2].color = Color.gray;
+            signalLights[2].SetColor("_EmissionColor", Color.gray * 1.5f);
 
             if (arduino.bulletCount_R < switchMode_R.maxBullet * 0.5)
-                spriteRenderers[0].color = Color.green;
+                signalLights[0].SetColor("_EmissionColor", Color.green * 1.5f);
             else if (arduino.bulletCount_R < switchMode_R.maxBullet * 0.75)
-                spriteRenderers[0].color = Color.yellow;
+                signalLights[0].SetColor("_EmissionColor", Color.yellow * 1.5f);
             else if (arduino.bulletCount_R == switchMode_R.maxBullet)
-                spriteRenderers[0].color = Color.red;
+                signalLights[0].SetColor("_EmissionColor", Color.red * 1.5f);
         }
         else  // right punch
         {
-            spriteRenderers[0].color = Color.gray;
-            spriteRenderers[2].color = Color.green;
+            signalLights[0].SetColor("_EmissionColor", Color.gray * 1.5f);
+            signalLights[2].SetColor("_EmissionColor", Color.green * 1.5f);
         }
 
 
         if (switchMode_L.gunMode)  // left gun
         {
-            spriteRenderers[3].color = Color.gray;
+            signalLights[3].SetColor("_EmissionColor", Color.gray * 1.5f);
 
             if (arduino.bulletCount_L < switchMode_L.maxBullet * 0.5)
-                spriteRenderers[1].color = Color.green;
+                signalLights[1].SetColor("_EmissionColor", Color.green * 1.5f);
             else if (arduino.bulletCount_L < switchMode_L.maxBullet * 0.75)
-                spriteRenderers[1].color = Color.yellow;
+                signalLights[1].SetColor("_EmissionColor", Color.yellow * 1.5f);
             else if (arduino.bulletCount_L == switchMode_L.maxBullet)
-                spriteRenderers[1].color = Color.red;
+                signalLights[1].SetColor("_EmissionColor", Color.red * 1.5f);
         }
         else  // left punch
         {
-            spriteRenderers[1].color = Color.gray;
-            spriteRenderers[3].color = Color.green;
+            signalLights[1].SetColor("_EmissionColor", Color.gray * 1.5f);
+            signalLights[3].SetColor("_EmissionColor", Color.green * 1.5f);
         }
-
-        // if (switchMode_R.gunMode)  // right gun
-        // {
-        //     signalLights[2].color = Color.gray;
-
-        //     if (arduino.bulletCount_R < switchMode_R.maxBullet * 0.5)
-        //         signalLights[0].color = Color.green;
-        //     else if (arduino.bulletCount_R < switchMode_R.maxBullet * 0.75)
-        //         signalLights[0].color = Color.yellow;
-        //     else if (arduino.bulletCount_R == switchMode_R.maxBullet)
-        //         signalLights[0].color = Color.red;
-        // }
-        // else  // right punch
-        // {
-        //     signalLights[0].color = Color.gray;
-        //     signalLights[2].color = Color.green;
-        // }
-
-
-        // if (switchMode_L.gunMode)  // left gun
-        // {
-        //     signalLights[3].color = Color.gray;
-
-        //     if (arduino.bulletCount_L < switchMode_L.maxBullet * 0.5)
-        //         signalLights[1].color = Color.green;
-        //     else if (arduino.bulletCount_L < switchMode_L.maxBullet * 0.75)
-        //         signalLights[1].color = Color.yellow;
-        //     else if (arduino.bulletCount_L == switchMode_L.maxBullet)
-        //         signalLights[1].color = Color.red;
-        // }
-        // else  // left punch
-        // {
-        //     signalLights[1].color = Color.gray;
-        //     signalLights[3].color = Color.green;
-        // }
     }
 }

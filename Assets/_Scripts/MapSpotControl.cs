@@ -53,25 +53,27 @@ public class MapSpotControl : MonoBehaviour
         // 4. 更新 icon 位置
         enemyIcon.anchoredPosition = enemyLocalPos;
 
-        // 5. 可選：如果在邊界，旋轉箭頭指向敵人方向
-        if (clamped)
-        {
-            Vector3 dir = (enemyTarget.position - miniMapCamera.transform.position).normalized;
-            float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-            enemyIcon.localRotation = Quaternion.Euler(0, 0, -angle);
-        }
-        else
-        {
-            // 在小地圖內就不旋轉
-            enemyIcon.localRotation = Quaternion.identity;
-        }
+        // // 5. 可選：如果在邊界，旋轉箭頭指向敵人方向
+        // if (clamped)
+        // {
+        //     Vector3 dir = (enemyTarget.position - miniMapCamera.transform.position).normalized;
+        //     float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+        //     enemyIcon.localRotation = Quaternion.Euler(0, 0, -angle);
+        // }
+        // else
+        // {
+        //     // 在小地圖內就不旋轉
+        //     enemyIcon.localRotation = Quaternion.identity;
+        // }
 
 
+        // player icon pos
         Vector3 playerViewportPos = miniMapCamera.WorldToViewportPoint(playerTarget.position);
         Vector2 playerLocalPos = new Vector2(
             (playerViewportPos.x - 0.5f) * mapSize.x,
             (playerViewportPos.y - 0.5f) * mapSize.y
         );
         playerIcon.anchoredPosition = playerLocalPos;
+        playerIcon.localRotation = Quaternion.Euler(0, 0, -playerTarget.eulerAngles.y);
     }
 }

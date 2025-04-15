@@ -11,6 +11,9 @@ public class ScaleUp : MonoBehaviour
 
     private Vector3 oriScale;
     private RectTransform rectTransform;
+    private float passedTime;
+    private Coroutine coroutine = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +38,31 @@ public class ScaleUp : MonoBehaviour
         {
             rectTransform.localScale = Vector3.Lerp(rectTransform.localScale, oriScale, Time.deltaTime * delay);
         }
+
+        if (Input.GetKeyDown("i"))
+        {
+            scaleUp = true;
+            if (coroutine != null)
+            {
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(ScaleUpFalse());
+        }
+    }
+    
+    public IEnumerator ScaleUpFalse()
+    {
+        yield return new WaitForSeconds(3);
+        scaleUp = false;
+    }
+
+    public void TooFarPunch()
+    {
+        scaleUp = true;
+        if (coroutine != null)
+        {
+            StopCoroutine(coroutine);
+        }
+        coroutine = StartCoroutine(ScaleUpFalse());
     }
 }

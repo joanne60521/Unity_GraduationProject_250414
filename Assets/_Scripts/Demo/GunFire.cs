@@ -63,7 +63,7 @@ public class GunFire : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.forward * range/2, Color.yellow);
             hitWhere.transform.position = transform.position + transform.forward * range/2;
-            hitWhere.transform.localScale = Vector3.one * range/2 * 0.1f;
+            hitWhere.transform.localScale = Vector3.one * range/2 * 0.05f;
             scaleUp.scaleUp = false;
         }
     }

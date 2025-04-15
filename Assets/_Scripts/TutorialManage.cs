@@ -12,6 +12,7 @@ using UnityEngine.Playables;
 
 public class TutorialManage : MonoBehaviour
 {
+    public ControllerBtnEmmision controllerBtnEmmision;
     public PlayableDirector attackedTimeline;
     public VideoPlayer videoPlayer;
     public RawImage screenRawImage;
@@ -143,6 +144,7 @@ public class TutorialManage : MonoBehaviour
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
                 isSwitched = false;
+                controllerBtnEmmision.SetBlinking(true);
                 break;
 
             case TutorialState.Switch:
@@ -162,6 +164,7 @@ public class TutorialManage : MonoBehaviour
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
                 isSwitchBacked = false;
+                controllerBtnEmmision.SetBlinking(true);
                 break;
                 
             case TutorialState.SwitchBack:
@@ -316,6 +319,7 @@ public class TutorialManage : MonoBehaviour
         {
             switchMode_L.canSwitch = false;
             switchMode_R.canSwitch = false;
+            controllerBtnEmmision.SetBlinking(false);
             // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
         }
@@ -325,6 +329,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.SwitchBack)
         {
+            controllerBtnEmmision.SetBlinking(false);
             // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
         }

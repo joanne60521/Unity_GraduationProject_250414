@@ -21,10 +21,10 @@ public class Enemy : MonoBehaviour
 
     public Target target;
     [SerializeField] public ParticleSystem explode;
-    [HideInInspector]public float distance;
+    public float distance;
     [HideInInspector]public Vector3 lookAtTargetPos;
 
-
+    private float originSpeed;
 
  
     void Start()
@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         player = GameObject.FindWithTag("PlayerRobot");
+        originSpeed = agent.speed;
     }
     
  
@@ -47,7 +48,7 @@ public class Enemy : MonoBehaviour
             animator.SetFloat("speed", 0);
             agent.speed = 0;
         }
- 
+
         if (player != null && !target.died)
         {
             distance = Vector3.Distance(player.transform.position, transform.position);
@@ -59,6 +60,7 @@ public class Enemy : MonoBehaviour
                     timePassed = 0;
                 }
             }
+
             timePassed += Time.deltaTime;
     
             if (newDestinationCD <= 0 && Vector3.Distance(player.transform.position, transform.position) <= aggroRange && distance >= attackRange)
