@@ -82,6 +82,7 @@ public class VRMap_Hand
                 {
                     brake = true;
                     braked = true;
+                    Debug.Log("brake = " + brake);
                 }else
                 {
                     brake = false;

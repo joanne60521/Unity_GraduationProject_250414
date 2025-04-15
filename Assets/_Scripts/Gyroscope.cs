@@ -48,7 +48,7 @@ public class Gyroscope : MonoBehaviour
 
     void ReadSerialData()
     {
-        while (isRunning)
+        while (isRunning && sp5.IsOpen)
         {
             try
             {
@@ -113,12 +113,17 @@ public class Gyroscope : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        if (sp5 != null && sp5.IsOpen)
+        {
+            sp5.Close();
+        }
+    }
     void OnApplicationQuit()
     {
-        if(sp5 != null)
+        if (sp5 != null && sp5.IsOpen)
         {
-            isRunning = false;
-            serialThread.Join();
             sp5.Close();
         }
     }
