@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 20
+  m_text: / 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52d0631b6858f0b4eb40fcbfd3f26932, type: 2}
   m_sharedMaterial: {fileID: -2935757905622759859, guid: 52d0631b6858f0b4eb40fcbfd3f26932,
@@ -1743,7 +1743,7 @@ MonoBehaviour:
   laserLine: {fileID: 787037247}
   animator: {fileID: 187439586}
   canSwitch: 1
-  maxBullet: 20
+  maxBullet: 10
 --- !u!1001 &199052952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10375,7 +10375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52d0631b6858f0b4eb40fcbfd3f26932, type: 2}
   m_sharedMaterial: {fileID: -2935757905622759859, guid: 52d0631b6858f0b4eb40fcbfd3f26932,
@@ -11234,7 +11234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2111360742}
-  countdownTime: 300
+  countdownTime: 180
   bulletScript: {fileID: 2958850200192739875, guid: 254f401d5ac6e404d9999093fa5c2fd1,
     type: 3}
   loseTimeline: {fileID: 621078896}
@@ -15720,7 +15720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 20
+  m_text: / 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52d0631b6858f0b4eb40fcbfd3f26932, type: 2}
   m_sharedMaterial: {fileID: -2935757905622759859, guid: 52d0631b6858f0b4eb40fcbfd3f26932,
@@ -17612,7 +17612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52d0631b6858f0b4eb40fcbfd3f26932, type: 2}
   m_sharedMaterial: {fileID: -2935757905622759859, guid: 52d0631b6858f0b4eb40fcbfd3f26932,
@@ -25792,7 +25792,7 @@ MonoBehaviour:
   laserLine: {fileID: 640203174}
   animator: {fileID: 1985046985}
   canSwitch: 1
-  maxBullet: 20
+  maxBullet: 10
 --- !u!1 &1992658105
 GameObject:
   m_ObjectHideFlags: 0
@@ -28719,7 +28719,7 @@ Transform:
   m_GameObject: {fileID: 7294392325331295568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.6, y: -0.89, z: 155.1}
+  m_LocalPosition: {x: -228.3, y: -0.89, z: 306}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children:
