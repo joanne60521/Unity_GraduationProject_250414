@@ -2399,10 +2399,10 @@ MonoBehaviour:
   tutorialTextures:
   - {fileID: 2800000, guid: f0588bce9a952ae4b85eb5268074b25f, type: 3}
   - {fileID: 2800000, guid: 3238fac8aae0a5048af34be1f047ec36, type: 3}
-  - {fileID: 2800000, guid: f1a53a05cd2907542a63d870a0753232, type: 3}
+  - {fileID: 2800000, guid: da6dd929edd83cd429efac7d52538268, type: 3}
   - {fileID: 2800000, guid: 2034a037ac7321c428d96ad96263f6f7, type: 3}
   - {fileID: 2800000, guid: 9b627050d7669714fac2f85b483d775c, type: 3}
-  - {fileID: 2800000, guid: cc5c0f195c194ff49bde7c07a1bf52ef, type: 3}
+  - {fileID: 2800000, guid: 91c59bd0e65db1b468ef2c40d64664ea, type: 3}
   enemy: {fileID: 8706191037657928980}
   globalVolume: {fileID: 84055014}
   fadeDuration: 1

@@ -190,9 +190,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -285,9 +287,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -538,9 +542,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -821,9 +827,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -1069,9 +1077,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -1329,9 +1339,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -1452,9 +1464,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -1578,9 +1592,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -1859,9 +1875,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -2934,9 +2952,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -3060,9 +3080,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -4126,7 +4148,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 2a82e8d1ec686c64b961470115be4718, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -4208,9 +4230,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -5847,9 +5871,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -5964,9 +5990,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -6223,9 +6251,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -7172,9 +7202,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -7534,9 +7566,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -7821,9 +7855,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -8029,9 +8065,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -8183,9 +8221,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -8278,9 +8318,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -8846,9 +8888,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -9000,9 +9044,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -9749,9 +9795,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -10468,9 +10516,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -10764,9 +10814,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -11494,9 +11546,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -11621,9 +11675,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -12044,9 +12100,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -12371,9 +12429,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -13069,9 +13129,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -14814,9 +14876,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -15429,9 +15493,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -15618,9 +15684,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -15864,9 +15932,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -16329,9 +16399,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -16722,9 +16794,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -16817,9 +16891,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -16912,9 +16988,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17299,9 +17377,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17450,9 +17530,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17545,9 +17627,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17640,9 +17724,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17827,9 +17913,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -17950,9 +18038,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -18045,9 +18135,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -18215,9 +18307,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -18428,9 +18522,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -18523,9 +18619,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -18903,9 +19001,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -19584,9 +19684,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -19795,9 +19897,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -20111,9 +20215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -20611,9 +20717,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -21330,9 +21438,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -21521,9 +21631,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -21616,9 +21728,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -22073,9 +22187,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -26173,9 +26289,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -26356,9 +26474,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -26510,9 +26630,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -26580,7 +26702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1745276336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28602,9 +28724,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -28942,9 +29066,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -29121,9 +29247,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -29333,9 +29461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -29586,9 +29716,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -29822,9 +29954,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -29917,9 +30051,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -30043,9 +30179,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -31138,9 +31276,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -31265,9 +31405,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -31493,9 +31635,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -31588,9 +31732,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -31683,9 +31829,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -32085,9 +32233,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -32315,9 +32465,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 0
-    triggerAllowedTags: []
+    minimumCollisionForce: 10
+    filterCollisionsByTag: 1
+    triggerAllowedTags:
+    - Shell
+    - RobotHand
     triggerKey: 0
   fractureOptions:
     fragmentCount: 40
@@ -33947,7 +34099,7 @@ Transform:
   m_GameObject: {fileID: 7294392325331295568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1, y: -0.89, z: 127.3}
+  m_LocalPosition: {x: -230, y: -0.89, z: 332}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children:
