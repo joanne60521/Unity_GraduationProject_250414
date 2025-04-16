@@ -190,7 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -2952,7 +2952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -3080,7 +3080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -4230,7 +4230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -4590,7 +4590,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366761224}
-  - component: {fileID: 366761223}
   - component: {fileID: 366761225}
   m_Layer: 0
   m_Name: GameManager
@@ -4599,55 +4598,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &366761223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366761222}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eac7f4a224a31b409df0ea5a7809ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerBtnEmmision: {fileID: 0}
-  attackedTimeline: {fileID: 0}
-  videoPlayer: {fileID: 0}
-  screenRawImage: {fileID: 0}
-  tutorialUI: {fileID: 352489645}
-  tutorialObjects: {fileID: 691358013}
-  tutorialText: {fileID: 475892325}
-  tutorialImage: {fileID: 921009375}
-  tutorialSprites:
-  - {fileID: 21300000, guid: 89bf685a3f4707e43a37e4bd85d903e9, type: 3}
-  - {fileID: 21300000, guid: a3fde0fc8385a724a8c7fa51e4a77ab4, type: 3}
-  - {fileID: 21300000, guid: 82d198b9d9b285a40ac755217204a14b, type: 3}
-  - {fileID: 21300000, guid: 9086891f79a2e8b45963c1e1e58f430a, type: 3}
-  - {fileID: 21300000, guid: 870a431eb8ae140438b7f6fd1f7cc0b6, type: 3}
-  - {fileID: 21300000, guid: 3116129dbe9f61e4781f3958fab6caa9, type: 3}
-  tutorialTextures: []
-  enemy: {fileID: 7294392325331295568}
-  globalVolume: {fileID: 84055014}
-  fadeDuration: 1
-  moveForwardByThumbstick: {fileID: 1037819453}
-  turnRobotByThumbstick: {fileID: 0}
-  turnHeadByThumbstick: {fileID: 1490468523}
-  controlRobotByGyroscope: {fileID: 1037819456}
-  vRRig_Test: {fileID: 1167750481}
-  arduino: {fileID: 1431282204}
-  switchMode_L: {fileID: 187439589}
-  switchMode_R: {fileID: 1985046987}
-  bulletScript: {fileID: 2958850200192739875, guid: 254f401d5ac6e404d9999093fa5c2fd1,
-    type: 3}
-  tutorialAlertClip: {fileID: 8300000, guid: 78b7ea0aa57ccde4384fc7dd6074f7b1, type: 3}
-  isVision: 1
-  isMoved: 1
-  isSwitched: 1
-  isShooted: 1
-  isSwitchBacked: 1
-  isPunched: 1
-  cutsceneOn: 0
 --- !u!4 &366761224
 Transform:
   m_ObjectHideFlags: 0
@@ -5871,7 +5821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -5990,7 +5940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -6251,7 +6201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -7202,7 +7152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -7566,7 +7516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -7855,7 +7805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -8065,7 +8015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -8221,7 +8171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -8318,7 +8268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -8888,7 +8838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -9044,7 +8994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -9795,7 +9745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -10516,7 +10466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -10814,7 +10764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -11020,7 +10970,7 @@ GameObject:
   - component: {fileID: 777629768}
   m_Layer: 13
   m_Name: RobotConstraints_L_target
-  m_TagString: Untagged
+  m_TagString: RobotHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11546,7 +11496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -11675,7 +11625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -12100,7 +12050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -12429,7 +12379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -13129,7 +13079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -14876,7 +14826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -15493,7 +15443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -15684,7 +15634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -15932,7 +15882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -16399,7 +16349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -16794,7 +16744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -16891,7 +16841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -16988,7 +16938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -17377,7 +17327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -17530,7 +17480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -17627,7 +17577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -17724,7 +17674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -17913,7 +17863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -18038,7 +17988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -18135,7 +18085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -18307,7 +18257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -18522,7 +18472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -18619,7 +18569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -19001,7 +18951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -19684,7 +19634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -19897,7 +19847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -20215,7 +20165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -20717,7 +20667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -21438,7 +21388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -21631,7 +21581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -21728,7 +21678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -22187,7 +22137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -26289,7 +26239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -26474,7 +26424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -26630,7 +26580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -26763,7 +26713,7 @@ MonoBehaviour:
   resetCamera: {fileID: 536828890}
   fadeDuration: 2
   globalVolume: {fileID: 84055014}
-  tutorialManage: {fileID: 366761223}
+  tutorialManage: {fileID: 0}
   gameObjectsUnactive:
   - {fileID: 2100814114}
   - {fileID: 475419606}
@@ -28724,7 +28674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -29066,7 +29016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -29247,7 +29197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -29461,7 +29411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -29716,7 +29666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -29954,7 +29904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -30051,7 +30001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -30179,7 +30129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -31046,7 +30996,7 @@ GameObject:
   - component: {fileID: 2014303879}
   m_Layer: 13
   m_Name: RobotConstraints_R_target
-  m_TagString: Untagged
+  m_TagString: RobotHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31276,7 +31226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -31405,7 +31355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -31635,7 +31585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -31732,7 +31682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -31829,7 +31779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -32233,7 +32183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
@@ -32465,7 +32415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOptions:
     triggerType: 0
-    minimumCollisionForce: 10
+    minimumCollisionForce: 50
     filterCollisionsByTag: 1
     triggerAllowedTags:
     - Shell
