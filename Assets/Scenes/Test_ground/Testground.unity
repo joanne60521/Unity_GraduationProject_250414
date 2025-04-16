@@ -340,14 +340,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -369,7 +369,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9105438}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -538,14 +538,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -567,7 +567,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10086321}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4116,14 +4116,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -4145,7 +4145,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202087536}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4753,14 +4753,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -4782,7 +4782,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217860787}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7826,14 +7826,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -7855,7 +7855,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362246146}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -8493,14 +8493,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -8522,7 +8522,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395353164}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9198,14 +9198,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -9227,7 +9227,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419323066}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9713,14 +9713,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -9742,7 +9742,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435929646}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -11024,14 +11024,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -11053,7 +11053,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495425705}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -11501,14 +11501,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -11530,7 +11530,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510933109}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -11788,14 +11788,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -11817,7 +11817,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520346722}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -12457,14 +12457,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -12486,7 +12486,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550524826}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -13147,14 +13147,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -13176,7 +13176,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593358614}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -15041,14 +15041,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -15070,7 +15070,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686341471}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -15635,14 +15635,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -15664,7 +15664,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730457763}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -18842,14 +18842,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -18871,7 +18871,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861468369}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -19034,14 +19034,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -19063,7 +19063,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863586996}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -20182,14 +20182,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -20211,7 +20211,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901470545}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -20940,14 +20940,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -20969,7 +20969,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935507557}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -21562,14 +21562,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -21591,7 +21591,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973860895}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -22563,14 +22563,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -22592,7 +22592,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802194306}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -23084,14 +23084,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -23113,7 +23113,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026888082}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -23270,14 +23270,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -23299,7 +23299,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849532608}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -23640,14 +23640,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -23669,7 +23669,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039330118}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -23943,14 +23943,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -23972,7 +23972,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055539576}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -25035,14 +25035,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -25064,7 +25064,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108390225}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -25338,14 +25338,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -25367,7 +25367,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111319289}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -25542,14 +25542,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -25571,7 +25571,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117134719}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -26613,14 +26613,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -26642,7 +26642,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162778789}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -27051,14 +27051,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -27080,7 +27080,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985253313}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -27722,14 +27722,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -27751,7 +27751,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226446303}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -27954,14 +27954,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -27983,7 +27983,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238189490}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -29307,14 +29307,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -29336,7 +29336,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315428434}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -30037,14 +30037,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -30066,7 +30066,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357031437}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -30516,14 +30516,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -30545,7 +30545,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160317233}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -30946,14 +30946,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -30975,7 +30975,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375189419}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -31965,14 +31965,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -31994,7 +31994,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413653730}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -32062,14 +32062,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -32091,7 +32091,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427490196}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -32765,14 +32765,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -32794,7 +32794,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448630994}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -33084,14 +33084,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -33113,7 +33113,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461023897}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -34076,14 +34076,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -34105,7 +34105,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509159306}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -34268,14 +34268,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -34297,7 +34297,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510405139}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -34656,14 +34656,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -34685,7 +34685,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535116884}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -34848,14 +34848,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -34877,7 +34877,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537107884}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -35112,7 +35112,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5577e8ebeccbab04f9d70aadf4b17e37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.9
+      value: -6.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5577e8ebeccbab04f9d70aadf4b17e37,
         type: 3}
@@ -35747,14 +35747,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -35776,7 +35776,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582847419}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -36023,14 +36023,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -36052,7 +36052,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390420958}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -36233,14 +36233,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -36262,7 +36262,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582439011}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -36454,14 +36454,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -36483,7 +36483,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371575212}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -37435,14 +37435,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -37464,7 +37464,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864744683}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -37538,14 +37538,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -37567,7 +37567,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137036753}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -37914,14 +37914,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -37943,7 +37943,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715079586}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -38456,14 +38456,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -38485,7 +38485,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746166258}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -39163,14 +39163,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -39192,7 +39192,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780725148}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -39367,14 +39367,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -39396,7 +39396,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794006014}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -39867,14 +39867,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -39896,7 +39896,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820493379}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -40065,14 +40065,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -40094,7 +40094,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820706657}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -40673,14 +40673,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -40702,7 +40702,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461646366}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -41043,14 +41043,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -41072,7 +41072,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853370699}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -41409,14 +41409,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -41438,7 +41438,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869051381}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -41595,14 +41595,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -41624,7 +41624,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374721451}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -43016,14 +43016,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -43045,7 +43045,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937739330}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -43208,14 +43208,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -43237,7 +43237,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949127087}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -43400,14 +43400,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -43429,7 +43429,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950094218}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -43859,14 +43859,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -43888,7 +43888,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956282853}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -44128,14 +44128,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -44157,7 +44157,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125590461}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -44369,14 +44369,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -44398,7 +44398,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720849677}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -44678,14 +44678,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -44707,7 +44707,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983884021}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -45039,14 +45039,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -45068,7 +45068,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016318162}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -45243,14 +45243,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -45272,7 +45272,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017459872}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -46078,14 +46078,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -46107,7 +46107,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456667509}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -46525,14 +46525,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -46554,7 +46554,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090390020}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -46622,14 +46622,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -46651,7 +46651,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446163260}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -46885,14 +46885,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -46914,7 +46914,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140386155}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -47160,14 +47160,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -47189,7 +47189,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161680284}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -47613,14 +47613,14 @@ MonoBehaviour:
     - RobotHand
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 10
+    fragmentCount: 100
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: b4ffe6ecda4a8b046b268155a24a2503, type: 2}
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 2, y: 2}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
     enableRefracturing: 0
@@ -47642,7 +47642,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141647465}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
