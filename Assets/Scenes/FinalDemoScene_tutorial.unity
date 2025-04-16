@@ -299,6 +299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hangar_embed_test
       objectReference: {fileID: 0}
+    - target: {fileID: 6670461115980979843, guid: 45268aa99fcbf1e40955232c44faf95f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6463,7 +6468,7 @@ GameObject:
   - component: {fileID: 777629768}
   m_Layer: 13
   m_Name: RobotConstraints_L_target
-  m_TagString: Untagged
+  m_TagString: RobotHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10616,6 +10621,7 @@ MonoBehaviour:
     rigTarget: {fileID: 566038523}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
   leftHand:
+    ScaleUp: {fileID: 0}
     temp: {fileID: 777629767}
     vrTarget: {fileID: 2100814115}
     rigTarget: {fileID: 777629765}
@@ -10645,6 +10651,7 @@ MonoBehaviour:
     braked: 0
     velocityMag: 0
   rightHand:
+    ScaleUp: {fileID: 0}
     temp: {fileID: 2014303878}
     vrTarget: {fileID: 475419607}
     rigTarget: {fileID: 2014303876}
@@ -14178,7 +14185,7 @@ GameObject:
   - component: {fileID: 2014303879}
   m_Layer: 13
   m_Name: RobotConstraints_R_target
-  m_TagString: Untagged
+  m_TagString: RobotHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

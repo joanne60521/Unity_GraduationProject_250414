@@ -15,6 +15,7 @@ TagManager:
   - PlayerRobot
   - RecordCam
   - Ruins
+  - RobotHand
   layers:
   - Default
   - TransparentFX
