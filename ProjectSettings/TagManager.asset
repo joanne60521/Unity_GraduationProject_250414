@@ -16,6 +16,7 @@ TagManager:
   - RecordCam
   - Ruins
   - RobotHand
+  - Fractures
   layers:
   - Default
   - TransparentFX
