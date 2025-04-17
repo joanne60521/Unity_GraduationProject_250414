@@ -24,7 +24,6 @@ public class DestroyFracture : MonoBehaviour
             if (col != null)
             {
                 col.isTrigger = true;
-                Debug.Log($"Set isTrigger = true on: {gameObject.name}");
             }
         
         
