@@ -7,6 +7,7 @@ using UnityEngine.AI;
 
 public class CountdownTimer : MonoBehaviour
 {
+    public EmissionPowerOff emissionPowerOff;
     public TMP_Text timerText; // 拖入 TextMeshPro UI
     public float countdownTime = 600f; // 10 分鐘 = 600 秒
     private float timer;
@@ -35,6 +36,11 @@ public class CountdownTimer : MonoBehaviour
             int milliseconds = Mathf.FloorToInt((timer * 100f) % 100f); // 取兩位數毫秒
 
             timerText.text = $"{minutes:00}:{seconds:00}:{milliseconds:00}";
+
+            if (timer <= 10)
+            {
+                timerText.color = Color.red;
+            }
         }
         else
         {
@@ -42,6 +48,7 @@ public class CountdownTimer : MonoBehaviour
             audioSourceTikTok.Stop();
             
             // lose
+            emissionPowerOff.powerOff = true;
             loseTimeline.Play();
             functionManage.AllFunctionOff();
             enemy.attackRange = -1;

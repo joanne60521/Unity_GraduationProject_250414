@@ -7,9 +7,11 @@ public class EmissionControl : MonoBehaviour
     public Color emissionColor = Color.white;  // 可調整的 HDR 顏色
     public float intensity = 2.0f;             // HDR 強度
 
-    public SkinnedMeshRenderer rend;
+    public Renderer rend;
     public int matInt;
     private Material mat;
+    [SerializeField] float blinkSpeed = 2f; 
+    public bool emissionBlink;
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class EmissionControl : MonoBehaviour
         {
             mat = rend.materials[matInt]; // 取得材質
             EnableEmission();    // 啟用 Emission
-            UpdateEmissionColor(); // 設置 HDR 顏色
+            // UpdateEmissionColor(); // 設置 HDR 顏色
         }
     }
 
@@ -41,10 +43,11 @@ public class EmissionControl : MonoBehaviour
     // 測試用：按鍵改變 Emission 顏色
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (emissionBlink)
         {
-            emissionColor = Random.ColorHSV(); // 變更顏色
-            UpdateEmissionColor();
+            float emission = Mathf.PingPong(Time.time * blinkSpeed, 1.0f);
+            Color finalColor = emissionColor * Mathf.LinearToGammaSpace(emission);
+            mat.SetColor("_EmissionColor", finalColor);
         }
     }
 }
