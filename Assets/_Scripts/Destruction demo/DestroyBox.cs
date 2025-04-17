@@ -16,7 +16,7 @@ public class DestroyBox : MonoBehaviour
     {
         if (Time.time > nextTimeTo)
         {
-            nextTimeTo = Time.time + 3;
+            nextTimeTo = Time.time + 0.5f;
 
             GameObject[] fractureObjects = GameObject.FindGameObjectsWithTag("Fractures");
 
@@ -32,7 +32,6 @@ public class DestroyBox : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Destroy: " + other.gameObject.name);
         Destroy(other.gameObject);      
     }
 }
