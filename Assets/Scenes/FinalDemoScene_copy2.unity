@@ -24718,7 +24718,7 @@ MonoBehaviour:
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: -60, z: -90}
     playerOriginMainCam: {fileID: 1736362489}
-    scaleUp: 15
+    scaleUp: 17
     delay: 2.5
     velocityReference: {fileID: -7925152284794732040, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
@@ -24748,7 +24748,7 @@ MonoBehaviour:
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 60, z: 90}
     playerOriginMainCam: {fileID: 1736362489}
-    scaleUp: 15
+    scaleUp: 17
     delay: 2.5
     velocityReference: {fileID: 7031451668641621960, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
@@ -33052,7 +33052,7 @@ Transform:
   m_GameObject: {fileID: 1639691298}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000065431894, y: 0.99999917, z: 0.0010183216, w: 0.0008304416}
-  m_LocalPosition: {x: 0.0036870798, y: 1.5922773, z: -0.012659355}
+  m_LocalPosition: {x: 0.0036898542, y: 1.5922773, z: -0.012659247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45704,7 +45704,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992658105}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
