@@ -12,11 +12,12 @@ using UnityEngine.Playables;
 
 public class TutorialManage : MonoBehaviour
 {
+    public MoveToEnemyTrigger moveToEnemyTrigger;
     public ControllerBtnEmmision controllerBtnEmmision;
     public PlayableDirector attackedTimeline;
     public VideoPlayer videoPlayer;
     public RawImage screenRawImage;
-    public enum TutorialState {Vision, Move, Switch, Shoot, SwitchBack, Punch, Finish }
+    public enum TutorialState {Vision, Move, Switch, Shoot, SwitchBack, MoveTo, Punch, Finish }
     private TutorialState currentStep = TutorialState.Vision;
 
     public GameObject tutorialUI; // 放 UI 提示 (Text, Canvas)
@@ -138,7 +139,7 @@ public class TutorialManage : MonoBehaviour
 
             case TutorialState.Move:
                 currentStep = TutorialState.Switch;
-                PauseGame(true, 0); // 進入教學時，先暫停敵人
+                PauseGame(true, 0);
                 // ShowMessage("現在按下任一發光按鈕切換成槍擊模式！", 2);
                 ShowTutorial(2);
                 switchMode_L.canSwitch = true;
@@ -149,7 +150,7 @@ public class TutorialManage : MonoBehaviour
 
             case TutorialState.Switch:
                 currentStep = TutorialState.Shoot;
-                PauseGame(true, 0); // 進入教學時，先暫停敵人
+                PauseGame(true, 0);
                 // ShowMessage("伸出手臂，瞄準藍色準星，按下扳機射擊！", 3);
                 ShowTutorial(3);
                 arduino.canShoot = true;
@@ -158,20 +159,29 @@ public class TutorialManage : MonoBehaviour
 
             case TutorialState.Shoot:
                 currentStep = TutorialState.SwitchBack;
-                PauseGame(true, 0); // 進入教學時，先暫停敵人
+                PauseGame(true, 0);
                 // ShowMessage("按下同樣的按鈕將雙手切換回揮拳模式！", 2);
-                ShowTutorial(5);
+                ShowTutorial(4);
+                arduino.canShoot = false;
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
                 isSwitchBacked = false;
                 controllerBtnEmmision.SetBlinking(true);
                 break;
-                
+
             case TutorialState.SwitchBack:
+                currentStep = TutorialState.MoveTo;
+                PauseGame(true, 0);
+                ShowTutorial(5);
+                switchMode_L.canSwitch = false;
+                switchMode_R.canSwitch = false;
+                break;
+                
+            case TutorialState.MoveTo:
                 currentStep = TutorialState.Punch;
-                PauseGame(true, 0); // 進入教學時，先暫停敵人
+                PauseGame(true, 0);
                 // ShowMessage("距離敵人夠\"近\"，營幕提示揮拳時，往前揮出！", 4);
-                ShowTutorial(4);
+                ShowTutorial(6);
                 vRRig_Test.leftHand.attackMode = true;
                 vRRig_Test.rightHand.attackMode = true;
                 isPunched = false;
@@ -300,6 +310,15 @@ public class TutorialManage : MonoBehaviour
         if (currentStep == TutorialState.Shoot)
         {
             // 延遲後進入防禦教學
+            StartCoroutine(NextStepWithDelay(3f));
+        }
+    }
+
+    public void OnMoveToEnemy()
+    {
+        if (currentStep == TutorialState.MoveTo)
+        {
+            // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
         }
     }
