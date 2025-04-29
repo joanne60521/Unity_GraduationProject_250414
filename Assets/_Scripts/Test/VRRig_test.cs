@@ -24,7 +24,7 @@ public class VRMap_Hand
 
     // attack mode
     public InputActionReference velocityReference;
-    public GameObject cubeEnemy;
+    [SerializeField] GameObject cubeEnemy;
     public EnemyCollider EnemyCollider;
 
 
@@ -38,7 +38,7 @@ public class VRMap_Hand
     public bool attackMode = false;
 
     private float distance;
-    public CameraVisibilityWithViewport cameraVisibilityWithViewport;
+    public CubeEnemyVisibility cubeEnemyVisibility;
 
     [SerializeField]private float velContinueTime = 0;
     public float velContinueTimeThreshold = 0.2f;
@@ -59,6 +59,8 @@ public class VRMap_Hand
         velocityMag = Vector3.Magnitude(velocityReference.action.ReadValue<Vector3>());
         velocityValueZ = velocityReference.action.ReadValue<Vector3>().z;
 
+        cubeEnemy = cubeEnemyVisibility.closestEnemy;
+        Debug.Log(cubeEnemy);
         if (attackMode && cubeEnemy != null)
         {
             distance = (cubeEnemy.transform.position - playerOriginMainCam.transform.position).magnitude;
@@ -77,7 +79,7 @@ public class VRMap_Hand
                 Debug.Log("too far");
             }
 
-            if (velContinueTime >= velContinueTimeThreshold && distance < distanceThreshold && cameraVisibilityWithViewport.isInView && Time.time > nextunchTime)
+            if (velContinueTime >= velContinueTimeThreshold && distance < distanceThreshold && cubeEnemyVisibility.isInView && Time.time > nextunchTime)
             {
                 attacking = true;
             }

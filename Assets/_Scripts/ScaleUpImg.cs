@@ -13,7 +13,7 @@ public class ScaleUpImg : MonoBehaviour
     [SerializeField]private  float delay = 2.5f;
     [SerializeField]private  float scaleSize = 2f;
 
-    public CameraVisibilityWithViewport cameraVisibilityWithViewport;
+    public CubeEnemyVisibility cubeEnemyVisibility;
     public Transform playerOriginMainCam;
     public float distanceThreshold = 20f;
     public bool imgScaleUp = false;
@@ -40,7 +40,7 @@ public class ScaleUpImg : MonoBehaviour
         if (cubeEnemy != null)
         {
             distance = (cubeEnemy.transform.position - playerOriginMainCam.transform.position).magnitude;
-            if (distance < distanceThreshold && cameraVisibilityWithViewport.isInView)
+            if (distance < distanceThreshold && cubeEnemyVisibility.isInView)
             {
                 imgScaleUp = true;
             }else

@@ -12,13 +12,12 @@ using UnityEngine.Playables;
 
 public class TutorialManage : MonoBehaviour
 {
-    public MoveToEnemyTrigger moveToEnemyTrigger;
     public ControllerBtnEmmision controllerBtnEmmision;
     public PlayableDirector attackedTimeline;
     public VideoPlayer videoPlayer;
     public RawImage screenRawImage;
     public enum TutorialState {Vision, Move, Switch, Shoot, SwitchBack, MoveTo, Punch, Finish }
-    private TutorialState currentStep = TutorialState.Vision;
+    public TutorialState currentStep = TutorialState.Vision;
 
     public GameObject tutorialUI; // 放 UI 提示 (Text, Canvas)
     public GameObject tutorialObjects;
@@ -40,15 +39,18 @@ public class TutorialManage : MonoBehaviour
     public SwitchMode_edit switchMode_L;
     public SwitchMode_edit switchMode_R;
     public BulletScript bulletScript;
+    public MoveToEnemyTrigger moveToEnemyTrigger;
 
     public AudioClip tutorialAlertClip;
 
-    public bool isVision = true;
-    public bool isMoved = true;
-    public bool isSwitched = true;
-    public bool isShooted = true;
-    public bool isSwitchBacked = true;
-    public bool isPunched = true;
+    private bool isVision = true;
+    private bool isMoved = true;
+    private bool isSwitched = true;
+    private bool isShooted = true;
+    private bool isSwitchBacked = true;
+    private bool isMoveToEnemy = true;
+    private bool isPunched = true;
+
     public bool cutsceneOn = false;
 
     private Coroutine shrinkCoroutine = null;
@@ -175,6 +177,7 @@ public class TutorialManage : MonoBehaviour
                 ShowTutorial(5);
                 switchMode_L.canSwitch = false;
                 switchMode_R.canSwitch = false;
+                isMoveToEnemy = false;
                 break;
                 
             case TutorialState.MoveTo:
@@ -404,6 +407,15 @@ public class TutorialManage : MonoBehaviour
             {
                 isSwitchBacked = true;
                 OnPlayerSwitchBack();
+            }
+        }
+
+        if (moveToEnemyTrigger.moveToEnemy)
+        {
+            if (!isMoveToEnemy)
+            {
+                isMoveToEnemy = true;
+                OnMoveToEnemy();
             }
         }
 

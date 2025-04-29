@@ -51,7 +51,7 @@ public class PressToStart : MonoBehaviour
                 || rightPrimaryBtnReference.action.IsPressed()
                 || leftSecondaryBtnReference.action.IsPressed()
                 || rightSecondaryBtnReference.action.IsPressed()
-                || UnityEngine.Input.GetKeyDown("b")
+                || UnityEngine.Input.GetKeyDown("s")
             )
             {
                 pressed = true;

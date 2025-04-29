@@ -50,10 +50,6 @@ public class CameraShakeWhenFire : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("l"))
-        {
-            SignalTriggerShake();
-        }
         if (remainingShakeTime > 0)
         {
             // Randomly shake the camera around its original position

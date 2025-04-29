@@ -41,11 +41,6 @@ public class ControllerBtnEmmision : MonoBehaviour
             material_R.SetColor("_EmissionColor", finalColor);
             material1_R.SetColor("_EmissionColor", finalColor);
         }
-
-        if (Input.GetKeyDown("e"))
-        {
-            emmisionBlink = !emmisionBlink;
-        }
     }
 
     public void SetBlinking(bool state)

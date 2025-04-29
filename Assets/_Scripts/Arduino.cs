@@ -65,7 +65,7 @@ public class Arduino : MonoBehaviour
             rightActivateValue = rightActivateValueReference.action.ReadValue<float>();
             leftActivateValue = leftActivateValueReference.action.ReadValue<float>();
 
-            if (rightActivateValue > 0.5 && Time.time >= nextTimeToFire && bulletCount_R < switchMode_R.maxBullet)  // if (Input.GetKeyDown("s"))
+            if (rightActivateValue > 0.5 && Time.time >= nextTimeToFire && bulletCount_R < switchMode_R.maxBullet)
             {
                 nextTimeToFire = Time.time + fireRate;
                 if (!triggerPressed)
@@ -94,7 +94,7 @@ public class Arduino : MonoBehaviour
         {
             leftActivateValue = leftActivateValueReference.action.ReadValue<float>();
 
-            if (leftActivateValue > 0.5 && Time.time >= nextTimeToFire && bulletCount_L < switchMode_L.maxBullet)  // if (Input.GetKeyDown("s"))
+            if (leftActivateValue > 0.5 && Time.time >= nextTimeToFire && bulletCount_L < switchMode_L.maxBullet)
             {
                 nextTimeToFire = Time.time + fireRate;
                 if (!triggerPressed1)
@@ -120,8 +120,6 @@ public class Arduino : MonoBehaviour
 
         if (vRRig_Test.rightHand.brake && Time.time >= nextTimeToWriteBrake)
         {
-            // Debug.Log(vRRig_Test.rightHand.brake);
-            // Invoke("rightHandBrake", brakeDelay);
             if (sp3.IsOpen)
             {
                 sp3.Write("2");  // right hand punch
@@ -137,6 +135,14 @@ public class Arduino : MonoBehaviour
                 Debug.Log("sp3.Write: 3");
             }
             nextTimeToWriteBrake = Time.time + brakeWriteCD;
+        }
+        if (Input.GetKey("b"))
+        {
+            if (sp3.IsOpen)
+            {
+                vRRig_Test.rightHand.brake = false;
+                vRRig_Test.leftHand.brake = false;
+            }
         }
 
 
@@ -155,14 +161,6 @@ public class Arduino : MonoBehaviour
         }
     }
 
-    void rightHandBrake()
-    {
-        if (sp3.IsOpen)
-        {
-            sp3.Write("2");  // right hand punch
-            Debug.Log("sp3.Write: 2");
-        }
-    }
 
     void OnDestroy()
     {

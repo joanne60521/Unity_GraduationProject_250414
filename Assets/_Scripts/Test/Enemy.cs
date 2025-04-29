@@ -12,14 +12,14 @@ public class Enemy : MonoBehaviour
     public float attackRange = 1f;
     [SerializeField] float aggroRange = 4f;
  
-    public GameObject player;
+    private GameObject player;
     NavMeshAgent agent;
     Animator animator;
     float timePassed;
     float newDestinationCD = 0.5f;
 
 
-    public Target target;
+    private Target target;
     [SerializeField] public ParticleSystem explode;
     public float distance;
     [HideInInspector]public Vector3 lookAtTargetPos;
@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         player = GameObject.FindWithTag("PlayerRobot");
         originSpeed = agent.speed;
+        target = GetComponent<Target>();
     }
     
  
@@ -58,6 +59,9 @@ public class Enemy : MonoBehaviour
                 {
                     animator.SetTrigger("attack");
                     timePassed = 0;
+                    lookAtTargetPos = player.transform.position;
+                    lookAtTargetPos.y = transform.position.y;
+                    transform.LookAt(lookAtTargetPos);
                 }
             }
 
@@ -67,11 +71,11 @@ public class Enemy : MonoBehaviour
             {
                 newDestinationCD = 0.5f;
                 agent.SetDestination(player.transform.position);
+                lookAtTargetPos = agent.velocity;
+                Quaternion targetRotation = Quaternion.LookRotation(lookAtTargetPos);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10);
             }
             newDestinationCD -= Time.deltaTime;
-            lookAtTargetPos = player.transform.position;
-            lookAtTargetPos.y = transform.position.y;
-            transform.LookAt(lookAtTargetPos);
         }
  
     }

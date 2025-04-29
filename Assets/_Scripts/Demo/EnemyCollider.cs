@@ -9,7 +9,7 @@ public class EnemyCollider : MonoBehaviour
     // public Animator enemyAnimator;
     // [SerializeField] private AudioClip AttackHand;
     [SerializeField] private GameObject explode;
-    public Target target;
+    private Target target;
 
 
     // private void OnCollisionEnter(Collision col)
@@ -22,6 +22,11 @@ public class EnemyCollider : MonoBehaviour
     //         target.TakeDamage(10);
     //     }
     // }
+
+    void Start()
+    {
+        target = transform.parent.GetComponent<Target>();
+    }
 
     public void PlayEffects()
     {
