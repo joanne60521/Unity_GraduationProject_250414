@@ -13,7 +13,7 @@ public class CubeEnemyVisibility : MonoBehaviour
     public GameObject closestEnemy = null;
     public float closestDistanceSqr = Mathf.Infinity;
 
-    List<GameObject> visibleEnemies = new List<GameObject>();
+    public List<GameObject> visibleEnemies = new List<GameObject>();
 
     void Update()
     {
@@ -26,11 +26,26 @@ public class CubeEnemyVisibility : MonoBehaviour
                 // 检查是否在相机视野内
                 bool enemyIsInView = viewportPoint.z > 0 && viewportPoint.x >= 0 && viewportPoint.x <= 1 && viewportPoint.y >= 0 && viewportPoint.y <= 1;
                 if (enemyIsInView)
-                    visibleEnemies.Add(cubeEnemy);
+                {
+                    if (!visibleEnemies.Contains(cubeEnemy))
+                    {
+                        visibleEnemies.Add(cubeEnemy);
+                    }
+                }
+                else
+                {
+                    if (visibleEnemies.Contains(cubeEnemy))
+                    {
+                        visibleEnemies.Remove(cubeEnemy);
+                    }
+                }
             }
             if (visibleEnemies != null && visibleEnemies.Count > 0)
             {
                 isInView = true;
+                
+                closestEnemy = null;
+                closestDistanceSqr = Mathf.Infinity;
                 Vector3 currentPosition = transform.position;
                 foreach (GameObject visibleEnemy in visibleEnemies)
                 {
