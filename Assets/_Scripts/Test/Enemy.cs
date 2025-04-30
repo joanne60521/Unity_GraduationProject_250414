@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     private Target target;
     [SerializeField] public ParticleSystem explode;
     public float distance;
-    [HideInInspector]public Vector3 lookAtTargetPos;
+    Vector3 lookAtTargetPos;
 
     private float originSpeed;
 
@@ -59,9 +59,9 @@ public class Enemy : MonoBehaviour
                 {
                     animator.SetTrigger("attack");
                     timePassed = 0;
-                    lookAtTargetPos = player.transform.position;
-                    lookAtTargetPos.y = transform.position.y;
-                    transform.LookAt(lookAtTargetPos);
+                    Vector3 direction = player.transform.position - transform.position;
+                    Quaternion targetRotation = Quaternion.LookRotation(direction);
+                    transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10);
                 }
             }
 
