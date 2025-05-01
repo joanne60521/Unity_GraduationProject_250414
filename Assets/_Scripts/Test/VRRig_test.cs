@@ -85,7 +85,7 @@ public class VRMap_Hand
                 attacking = true;
             }
 
-            if (attacking)
+            if (attacking || Input.GetKeyDown("p"))
             {
                 // attack
                 if (!braked)
@@ -119,6 +119,8 @@ public class VRMap_Hand
                         rigTarget.localPosition = rigTarget.localPosition;
                     }
                     rigTarget.localRotation = Quaternion.Lerp(rigTarget.localRotation, vrTarget.localRotation * Quaternion.Euler(trackingRotationOffset), delay * Time.deltaTime);
+                    EnemyCollider = cubeEnemy.GetComponent<EnemyCollider>();
+                    Debug.Log(EnemyCollider);
                     EnemyCollider.PlayEffects();
                     audioSourceControl.PlayPunch();
                 }

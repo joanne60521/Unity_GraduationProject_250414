@@ -36101,7 +36101,7 @@ Transform:
   m_GameObject: {fileID: 1395506517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.7, y: -0.89, z: 278.8}
+  m_LocalPosition: {x: 5.7, y: -0.89, z: 148.8}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -36286,6 +36286,9 @@ MonoBehaviour:
   attackCD: 5
   attackRange: 18
   aggroRange: 450
+  enemyBulletNum: 100
+  shootRange: 150.2
+  shootRotateY: -75
   explode: {fileID: 1301697207402410478, guid: 39f852c28f9c3fd45a427c24f3564ba7, type: 3}
   distance: 0
 --- !u!114 &1395506524
@@ -36310,7 +36313,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.96
-  m_Speed: 0
+  m_Speed: 1
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -36332,7 +36335,7 @@ Animator:
   m_GameObject: {fileID: 1395506517}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5577e8ebeccbab04f9d70aadf4b17e37, type: 3}
-  m_Controller: {fileID: 9100000, guid: 5fdd0e8503e3a374ea328b5ce264de10, type: 2}
+  m_Controller: {fileID: 9100000, guid: 043765f8a01c47a4c800f8e312d42e07, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -57250,6 +57253,9 @@ MonoBehaviour:
   attackCD: 5
   attackRange: 18
   aggroRange: 450
+  enemyBulletNum: 0
+  shootRange: 1
+  shootRotateY: -75
   explode: {fileID: 1301697207402410478, guid: 39f852c28f9c3fd45a427c24f3564ba7, type: 3}
   distance: 0
 --- !u!114 &4610140226045822909
@@ -58088,7 +58094,7 @@ Transform:
   m_GameObject: {fileID: 7294392325331295568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.7, y: -0.89, z: 154.9}
+  m_LocalPosition: {x: 5.7, y: -0.89, z: 338.5}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -63113,7 +63119,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.96
-  m_Speed: 0
+  m_Speed: 1
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
