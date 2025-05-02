@@ -21,6 +21,14 @@ public class ChangeScene : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("n"))
+        {
+            LoadScene();
+        }
+    }
+
     public void LoadScene()
     {
         for (int i = 0; i < noPostProcess.Length; i ++)

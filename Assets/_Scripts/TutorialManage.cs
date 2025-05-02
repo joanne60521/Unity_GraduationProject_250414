@@ -12,6 +12,8 @@ using UnityEngine.Playables;
 
 public class TutorialManage : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioSource completeTutorAudioSource;
     public ControllerBtnEmmision controllerBtnEmmision;
     public PlayableDirector attackedTimeline;
     public VideoPlayer videoPlayer;
@@ -23,8 +25,10 @@ public class TutorialManage : MonoBehaviour
     public GameObject tutorialObjects;
     public Text tutorialText; // 文字顯示
     public Image tutorialImage; // 拖入 UI Image
-    public Sprite[] tutorialSprites; // 放入所有教學示意圖
+    // public Sprite[] tutorialSprites; // 放入所有教學示意圖
     public Texture[] tutorialTextures; // 放入所有教學示意圖
+    public VideoClip[] tutorialVideoClips;
+    public AudioClip[] tutorialAudioClips;
     public GameObject enemy; // 敵人
     public Volume globalVolume; // 拖入場景中的 Global Volume
     private ColorAdjustments colorAdjustments;
@@ -98,7 +102,7 @@ public class TutorialManage : MonoBehaviour
         // StartCoroutine(FadeFromBlack());
         PauseGame(true, 3); // 進入教學時，先暫停敵人
         // ShowMessage("旋轉視野\n右腳往前踩、左腳往後踩 → 向右轉\n左腳往前踩、右腳往後踩 → 向左轉", 0);
-        ShowTutorial(0);
+        ShowTutorial(0, 0);
         isVision = false;
         // turnHeadByThumbstick.enabled = true;
         // turnRobotByThumbstick.enabled = true;
@@ -121,6 +125,13 @@ public class TutorialManage : MonoBehaviour
     // 用 Coroutine 來延遲進入下一步
     IEnumerator NextStepWithDelay(float delay)
     {
+        // 音效提示完成教學
+        if (completeTutorAudioSource.isPlaying)
+        {
+            completeTutorAudioSource.Stop(); // 停止當前播放
+        }
+        completeTutorAudioSource.Play();
+
         // 在步驟間延遲，讓敵人和環境恢復正常
         PauseGame(false, 0);  // 恢復敵人和環境的正常狀態
         StartCoroutine(HideMessageAfterDelay(1f));
@@ -133,7 +144,7 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.Move;
                 PauseGame(true, 0); // 進入教學時，先暫停敵人
                 // ShowMessage("移動\n雙腳往前踩 → 前進\n雙腳往後踩 → 後退", 1);
-                ShowTutorial(1);
+                ShowTutorial(1, 1);
                 // moveForwardByThumbstick.enabled = true;
                 controlRobotByGyroscope.canMove = true;
                 isMoved = false;
@@ -143,7 +154,7 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.Switch;
                 PauseGame(true, 0);
                 // ShowMessage("現在按下任一發光按鈕切換成槍擊模式！", 2);
-                ShowTutorial(2);
+                ShowTutorial(2, 2);
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
                 isSwitched = false;
@@ -154,7 +165,7 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.Shoot;
                 PauseGame(true, 0);
                 // ShowMessage("伸出手臂，瞄準藍色準星，按下扳機射擊！", 3);
-                ShowTutorial(3);
+                ShowTutorial(3, 3);
                 arduino.canShoot = true;
                 isShooted = false;
                 break;
@@ -163,7 +174,7 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.SwitchBack;
                 PauseGame(true, 0);
                 // ShowMessage("按下同樣的按鈕將雙手切換回揮拳模式！", 2);
-                ShowTutorial(4);
+                ShowTutorial(4, 4);
                 arduino.canShoot = false;
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
@@ -174,7 +185,7 @@ public class TutorialManage : MonoBehaviour
             case TutorialState.SwitchBack:
                 currentStep = TutorialState.MoveTo;
                 PauseGame(true, 0);
-                ShowTutorial(5);
+                ShowTutorial(5, 5);
                 switchMode_L.canSwitch = false;
                 switchMode_R.canSwitch = false;
                 isMoveToEnemy = false;
@@ -184,7 +195,7 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.Punch;
                 PauseGame(true, 0);
                 // ShowMessage("距離敵人夠\"近\"，營幕提示揮拳時，往前揮出！", 4);
-                ShowTutorial(6);
+                ShowTutorial(6, 6);
                 vRRig_Test.leftHand.attackMode = true;
                 vRRig_Test.rightHand.attackMode = true;
                 isPunched = false;
@@ -200,32 +211,43 @@ public class TutorialManage : MonoBehaviour
         }
     }
 
-    void ShowTutorial(int imageIndex)
+    void ShowTutorial(int imageIndex, int clipIndex)
     {
-        screenRawImage.texture = tutorialTextures[imageIndex];
+        // screenRawImage.texture = tutorialTextures[imageIndex];
+        videoPlayer.Stop();
+        videoPlayer.clip = tutorialVideoClips[imageIndex];
+        videoPlayer.Play();
         AudioSource.PlayClipAtPoint(tutorialAlertClip, tutorialUI.transform.position);
-    }
-
-    void ShowMessage(string message, int imageIndex)
-    {
-        Vector3 targetPos = new Vector3(0, -33, 0);
-        Vector3 targetRot = new Vector3(40, -0, 0);
-        Vector3 targetScale = new Vector3(0.4f, 0.4f, 0.4f);
-        if (shrinkCoroutine != null)
+        if (audioSource.isPlaying)
         {
-            StopCoroutine(shrinkCoroutine);
+            audioSource.Stop(); // 停止當前播放
         }
-        shrinkCoroutine = StartCoroutine(ShrinkTutorial(5f, targetPos, targetRot, targetScale, 3f));
 
-        tutorialUI.SetActive(true);
-        tutorialObjects.transform.localPosition = startPos;
-        tutorialObjects.transform.localEulerAngles = startRot;
-        tutorialObjects.transform.localScale = startScale;
-        tutorialText.text = message;
-        tutorialImage.sprite = tutorialSprites[imageIndex];
-        AudioSource.PlayClipAtPoint(tutorialAlertClip, tutorialUI.transform.position);
-        // StartCoroutine(HideMessageAfterDelay(7f)); // 顯示訊息 3 秒
+        audioSource.clip = tutorialAudioClips[clipIndex]; // 換音訊
+        audioSource.Play();         // 播放新的 clip
     }
+
+
+    // void ShowMessage(string message, int imageIndex)
+    // {
+    //     Vector3 targetPos = new Vector3(0, -33, 0);
+    //     Vector3 targetRot = new Vector3(40, -0, 0);
+    //     Vector3 targetScale = new Vector3(0.4f, 0.4f, 0.4f);
+    //     if (shrinkCoroutine != null)
+    //     {
+    //         StopCoroutine(shrinkCoroutine);
+    //     }
+    //     shrinkCoroutine = StartCoroutine(ShrinkTutorial(5f, targetPos, targetRot, targetScale, 3f));
+
+    //     tutorialUI.SetActive(true);
+    //     tutorialObjects.transform.localPosition = startPos;
+    //     tutorialObjects.transform.localEulerAngles = startRot;
+    //     tutorialObjects.transform.localScale = startScale;
+    //     tutorialText.text = message;
+    //     // tutorialImage.sprite = tutorialSprites[imageIndex];
+    //     AudioSource.PlayClipAtPoint(tutorialAlertClip, tutorialUI.transform.position);
+    //     // StartCoroutine(HideMessageAfterDelay(7f)); // 顯示訊息 3 秒
+    // }
 
     IEnumerator HideMessageAfterDelay(float delay)
     {
@@ -236,32 +258,32 @@ public class TutorialManage : MonoBehaviour
         tutorialObjects.transform.localScale = new Vector3(1, 1, 1);
     }
 
-    IEnumerator ShrinkTutorial(float delay, Vector3 targetPos, Vector3 targetRot, Vector3 targetScale, float duration)
-    {
-        yield return new WaitForSeconds(delay);
-        float elapsedTime = 0f;
+    // IEnumerator ShrinkTutorial(float delay, Vector3 targetPos, Vector3 targetRot, Vector3 targetScale, float duration)
+    // {
+    //     yield return new WaitForSeconds(delay);
+    //     float elapsedTime = 0f;
 
-        if (currentStep == TutorialState.Finish)
-        {
-            Destroy(tutorialUI);
-            Destroy(gameObject);
-        }
-        else
-        {
-            while (elapsedTime < duration)
-            {
-                tutorialObjects.transform.localPosition = Vector3.Lerp(startPos, targetPos, elapsedTime / duration);
-                tutorialObjects.transform.localEulerAngles = Vector3.Lerp(startRot, targetRot, elapsedTime / duration);
-                tutorialObjects.transform.localScale = Vector3.Lerp(startScale, targetScale, elapsedTime / duration);
-                elapsedTime += Time.deltaTime; // 隨時間累加
-                yield return null; // 等待下一幀
-            }
-        }
+    //     if (currentStep == TutorialState.Finish)
+    //     {
+    //         Destroy(tutorialUI);
+    //         Destroy(gameObject);
+    //     }
+    //     else
+    //     {
+    //         while (elapsedTime < duration)
+    //         {
+    //             tutorialObjects.transform.localPosition = Vector3.Lerp(startPos, targetPos, elapsedTime / duration);
+    //             tutorialObjects.transform.localEulerAngles = Vector3.Lerp(startRot, targetRot, elapsedTime / duration);
+    //             tutorialObjects.transform.localScale = Vector3.Lerp(startScale, targetScale, elapsedTime / duration);
+    //             elapsedTime += Time.deltaTime; // 隨時間累加
+    //             yield return null; // 等待下一幀
+    //         }
+    //     }
 
-        tutorialObjects.transform.localPosition = targetPos;
-        tutorialObjects.transform.localEulerAngles = targetRot;
-        tutorialObjects.transform.localScale = targetScale;
-    }
+    //     tutorialObjects.transform.localPosition = targetPos;
+    //     tutorialObjects.transform.localEulerAngles = targetRot;
+    //     tutorialObjects.transform.localScale = targetScale;
+    // }
 
     void PauseGame(bool pause, float delay)
     {
