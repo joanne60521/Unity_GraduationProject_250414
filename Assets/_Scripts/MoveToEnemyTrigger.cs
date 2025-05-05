@@ -8,7 +8,12 @@ public class MoveToEnemyTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        Debug.Log("Trigger Enter: " + other.gameObject.name);
         moveToEnemy = true;
+    }
+    void OnTriggerExit(Collider other)
+    {
+        Debug.Log("Trigger Exit: " + other.gameObject.name);
+        moveToEnemy = false;
     }
 }

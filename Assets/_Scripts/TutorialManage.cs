@@ -12,14 +12,17 @@ using UnityEngine.Playables;
 
 public class TutorialManage : MonoBehaviour
 {
+    public Transform PlayerRobot;
+    public CameraVisibilityWithViewport cameraVisibilityWithViewport_L;
+    public CameraVisibilityWithViewport cameraVisibilityWithViewport_R;
     public AudioSource audioSource;
     public AudioSource completeTutorAudioSource;
     public ControllerBtnEmmision controllerBtnEmmision;
     public PlayableDirector attackedTimeline;
     public VideoPlayer videoPlayer;
     public RawImage screenRawImage;
-    public enum TutorialState {Vision, Move, Switch, Shoot, SwitchBack, MoveTo, Punch, Finish }
-    public TutorialState currentStep = TutorialState.Vision;
+    public enum TutorialState {V_Hand1, Hand2, V_Vision1, V_Vision2, V_Forward, Punch1, V_Punch2, V_Backward, Switch1, Switch2, V_Switch3, Shoot1, V_Shoot2, Finish}
+    public TutorialState currentStep = TutorialState.V_Hand1;
 
     public GameObject tutorialUI; // 放 UI 提示 (Text, Canvas)
     public GameObject tutorialObjects;
@@ -43,16 +46,18 @@ public class TutorialManage : MonoBehaviour
     public SwitchMode_edit switchMode_L;
     public SwitchMode_edit switchMode_R;
     public BulletScript bulletScript;
-    public MoveToEnemyTrigger moveToEnemyTrigger;
+    public MoveToEnemyTrigger moveToEnemyTrigger_Forward;
+    public MoveToEnemyTrigger moveToEnemyTrigger_Backward;
 
     public AudioClip tutorialAlertClip;
 
-    private bool isVision = true;
-    private bool isMoved = true;
+    private bool isHand = true;
+    private bool isVision1 = true;
+    private bool isVision2 = true;
+    private bool isForwarded = true;
     private bool isSwitched = true;
     private bool isShooted = true;
-    private bool isSwitchBacked = true;
-    private bool isMoveToEnemy = true;
+    private bool isBackwarded = true;
     private bool isPunched = true;
 
     public bool cutsceneOn = false;
@@ -62,6 +67,8 @@ public class TutorialManage : MonoBehaviour
     private Vector3 startPos;
     private Vector3 startRot;
     private Vector3 startScale;
+
+    private float frequency = 0;
 
 
     void Start()
@@ -97,19 +104,6 @@ public class TutorialManage : MonoBehaviour
             StartTutorial();
     }
 
-    public void StartTutorial()
-    {
-        // StartCoroutine(FadeFromBlack());
-        PauseGame(true, 3); // 進入教學時，先暫停敵人
-        // ShowMessage("旋轉視野\n右腳往前踩、左腳往後踩 → 向右轉\n左腳往前踩、右腳往後踩 → 向左轉", 0);
-        ShowTutorial(0, 0);
-        isVision = false;
-        // turnHeadByThumbstick.enabled = true;
-        // turnRobotByThumbstick.enabled = true;
-        controlRobotByGyroscope.canTurn = true;
-        vRRig_Test.enabled = true;
-    }
-
     IEnumerator FadeFromBlack()
     {
         float t = 0;
@@ -122,109 +116,164 @@ public class TutorialManage : MonoBehaviour
         }
     }
 
-    // 用 Coroutine 來延遲進入下一步
+
+
+
+
+    public void StartTutorial()
+    {
+        // StartCoroutine(FadeFromBlack());
+        // PauseGame(true, 3); // 進入教學時，先暫停敵人
+        ShowTutorial(0);
+        vRRig_Test.enabled = true;
+    }
+
+
     IEnumerator NextStepWithDelay(float delay)
     {
-        // 音效提示完成教學
-        if (completeTutorAudioSource.isPlaying)
-        {
-            completeTutorAudioSource.Stop(); // 停止當前播放
-        }
-        completeTutorAudioSource.Play();
-
-        // 在步驟間延遲，讓敵人和環境恢復正常
-        PauseGame(false, 0);  // 恢復敵人和環境的正常狀態
-        StartCoroutine(HideMessageAfterDelay(1f));
+        // PauseGame(false, 0);  // 恢復敵人和環境的正常狀態
+        // StartCoroutine(HideMessageAfterDelay(1f));
         yield return new WaitForSeconds(delay); // 等待時間
 
         // 等待後進行步驟過渡
         switch (currentStep)
         {
-            case TutorialState.Vision:
-                currentStep = TutorialState.Move;
-                PauseGame(true, 0); // 進入教學時，先暫停敵人
-                // ShowMessage("移動\n雙腳往前踩 → 前進\n雙腳往後踩 → 後退", 1);
-                ShowTutorial(1, 1);
-                // moveForwardByThumbstick.enabled = true;
-                controlRobotByGyroscope.canMove = true;
-                isMoved = false;
+            case TutorialState.V_Hand1:
+                currentStep = TutorialState.Hand2;
+                PlayTutorialAudio((int)currentStep);
+                NextStepWithDelay(5);
                 break;
 
-            case TutorialState.Move:
-                currentStep = TutorialState.Switch;
-                PauseGame(true, 0);
+            case TutorialState.Hand2:
+                currentStep = TutorialState.V_Vision1;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 3); // 進入教學時，先暫停敵人
+                // ShowMessage("旋轉視野\n右腳往前踩、左腳往後踩 → 向右轉\n左腳往前踩、右腳往後踩 → 向左轉", 0);
+                ShowTutorial(1);
+                isVision1 = false;
+                // turnHeadByThumbstick.enabled = true;
+                // turnRobotByThumbstick.enabled = true;
+                controlRobotByGyroscope.canTurn = true;
+                break;
+
+            case TutorialState.V_Vision1:
+                currentStep = TutorialState.V_Vision2;
+                PlayTutorialAudio((int)currentStep);
+                isVision2 = false;
+                NextStepWithDelay(5);
+                break;
+
+            case TutorialState.V_Vision2:
+                currentStep = TutorialState.V_Forward;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 0); // 進入教學時，先暫停敵人
+                // ShowMessage("移動\n雙腳往前踩 → 前進\n雙腳往後踩 → 後退", 1);
+                ShowTutorial(2);
+                // moveForwardByThumbstick.enabled = true;
+                controlRobotByGyroscope.canMove = true;
+                isForwarded = false;
+                break;
+
+            case TutorialState.V_Forward:
+                currentStep = TutorialState.Punch1;
+                PlayTutorialAudio((int)currentStep);
+                NextStepWithDelay(5);
+                break;
+
+            case TutorialState.Punch1:
+                currentStep = TutorialState.V_Punch2;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 0);
+                // ShowMessage("距離敵人夠\"近\"，營幕提示揮拳時，往前揮出！", 4);
+                ShowTutorial(3);
+                vRRig_Test.leftHand.attackMode = true;
+                vRRig_Test.rightHand.attackMode = true;
+                isPunched = false;
+                break;
+
+            case TutorialState.V_Punch2:
+                currentStep = TutorialState.V_Backward;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 0);
+                ShowTutorial(4);
+                switchMode_L.canSwitch = false;
+                switchMode_R.canSwitch = false;
+                isBackwarded = false;
+                break;
+
+            case TutorialState.V_Backward:
+                currentStep = TutorialState.Switch1;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 0);
                 // ShowMessage("現在按下任一發光按鈕切換成槍擊模式！", 2);
-                ShowTutorial(2, 2);
+                ShowTutorial(5);
+                NextStepWithDelay(5);
+                break;
+
+            case TutorialState.Switch1:
+                currentStep = TutorialState.Switch2;
+                PlayTutorialAudio((int)currentStep);
+                NextStepWithDelay(5);
+                break;
+
+            case TutorialState.Switch2:
+                currentStep = TutorialState.V_Switch3;
+                PlayTutorialAudio((int)currentStep);
                 switchMode_L.canSwitch = true;
                 switchMode_R.canSwitch = true;
                 isSwitched = false;
                 controllerBtnEmmision.SetBlinking(true);
                 break;
 
-            case TutorialState.Switch:
-                currentStep = TutorialState.Shoot;
-                PauseGame(true, 0);
+            case TutorialState.V_Switch3:
+                currentStep = TutorialState.Shoot1;
+                PlayTutorialAudio((int)currentStep);
+                NextStepWithDelay(5);
+                break;
+
+            case TutorialState.Shoot1:
+                currentStep = TutorialState.V_Shoot2;
+                PlayTutorialAudio((int)currentStep);
+                // PauseGame(true, 0);
                 // ShowMessage("伸出手臂，瞄準藍色準星，按下扳機射擊！", 3);
-                ShowTutorial(3, 3);
+                ShowTutorial(6);
                 arduino.canShoot = true;
                 isShooted = false;
                 break;
 
-            case TutorialState.Shoot:
-                currentStep = TutorialState.SwitchBack;
-                PauseGame(true, 0);
-                // ShowMessage("按下同樣的按鈕將雙手切換回揮拳模式！", 2);
-                ShowTutorial(4, 4);
-                arduino.canShoot = false;
-                switchMode_L.canSwitch = true;
-                switchMode_R.canSwitch = true;
-                isSwitchBacked = false;
-                controllerBtnEmmision.SetBlinking(true);
-                break;
-
-            case TutorialState.SwitchBack:
-                currentStep = TutorialState.MoveTo;
-                PauseGame(true, 0);
-                ShowTutorial(5, 5);
-                switchMode_L.canSwitch = false;
-                switchMode_R.canSwitch = false;
-                isMoveToEnemy = false;
-                break;
-                
-            case TutorialState.MoveTo:
-                currentStep = TutorialState.Punch;
-                PauseGame(true, 0);
-                // ShowMessage("距離敵人夠\"近\"，營幕提示揮拳時，往前揮出！", 4);
-                ShowTutorial(6, 6);
-                vRRig_Test.leftHand.attackMode = true;
-                vRRig_Test.rightHand.attackMode = true;
-                isPunched = false;
-                break;
-
-            case TutorialState.Punch:
+            case TutorialState.V_Shoot2:
                 currentStep = TutorialState.Finish;
                 // ShowMessage("教學完成！開始戰鬥吧！", 5);
-                PauseGame(false, 0); // 教學結束，恢復敵人
+                // PauseGame(false, 0); // 教學結束，恢復敵人
                 bulletScript.damage = 20;
                 attackedTimeline.Play();
                 break;
+
         }
     }
 
-    void ShowTutorial(int imageIndex, int clipIndex)
+
+
+
+
+    void ShowTutorial(int videoIndex)
     {
         // screenRawImage.texture = tutorialTextures[imageIndex];
         videoPlayer.Stop();
-        videoPlayer.clip = tutorialVideoClips[imageIndex];
+        videoPlayer.clip = tutorialVideoClips[videoIndex];
         videoPlayer.Play();
-        AudioSource.PlayClipAtPoint(tutorialAlertClip, tutorialUI.transform.position);
+    }
+
+    void PlayTutorialAudio(int clipIndex)
+    {
         if (audioSource.isPlaying)
         {
             audioSource.Stop(); // 停止當前播放
         }
-
+    
         audioSource.clip = tutorialAudioClips[clipIndex]; // 換音訊
         audioSource.Play();         // 播放新的 clip
+
     }
 
 
@@ -249,14 +298,14 @@ public class TutorialManage : MonoBehaviour
     //     // StartCoroutine(HideMessageAfterDelay(7f)); // 顯示訊息 3 秒
     // }
 
-    IEnumerator HideMessageAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        tutorialUI.SetActive(false);
-        tutorialObjects.transform.localPosition = new Vector3(0, 0, 0);
-        tutorialObjects.transform.localEulerAngles = new Vector3(0, 0, 0);
-        tutorialObjects.transform.localScale = new Vector3(1, 1, 1);
-    }
+    // IEnumerator HideMessageAfterDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay);
+    //     tutorialUI.SetActive(false);
+    //     tutorialObjects.transform.localPosition = new Vector3(0, 0, 0);
+    //     tutorialObjects.transform.localEulerAngles = new Vector3(0, 0, 0);
+    //     tutorialObjects.transform.localScale = new Vector3(1, 1, 1);
+    // }
 
     // IEnumerator ShrinkTutorial(float delay, Vector3 targetPos, Vector3 targetRot, Vector3 targetScale, float duration)
     // {
@@ -309,102 +358,167 @@ public class TutorialManage : MonoBehaviour
         }
     }
 
-    // 玩家轉視野時觸發
+
+
+
+
+    IEnumerator PlayFinishTutor()
+    {
+        yield return new WaitForSeconds(1);
+        // 音效提示完成教學
+        if (completeTutorAudioSource.isPlaying)
+            completeTutorAudioSource.Stop();
+        completeTutorAudioSource.Play();
+    }
+
+
+    public void OnPlayerHand()
+    {
+        if (currentStep == TutorialState.V_Hand1)
+        {
+            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
+        }
+    }
+
     public void OnPlayerVision()
     {
-        if (currentStep == TutorialState.Vision)
+        if (currentStep == TutorialState.V_Vision1)
         {
-            // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
         }
     }
 
-    // 玩家移動時觸發
-    public void OnPlayerMove()
+    public void OnPlayerForward()
     {
-        if (currentStep == TutorialState.Move)
+        if (currentStep == TutorialState.V_Forward)
         {
-            // 延遲後進入攻擊教學
             StartCoroutine(NextStepWithDelay(3f));
-        }
-    }
-
-    // 玩家攻擊時觸發
-    public void OnPlayerShoot()
-    {
-        if (currentStep == TutorialState.Shoot)
-        {
-            // 延遲後進入防禦教學
-            StartCoroutine(NextStepWithDelay(3f));
-        }
-    }
-
-    public void OnMoveToEnemy()
-    {
-        if (currentStep == TutorialState.MoveTo)
-        {
-            // 延遲後結束教學
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
         }
     }
 
     public void OnPlayerPunch()
     {
-        if (currentStep == TutorialState.Punch)
+        if (currentStep == TutorialState.V_Punch2)
         {
-            // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
         }
     }
 
+    public void OnPlayerBackward()
+    {
+        if (currentStep == TutorialState.V_Backward)
+        {
+            // 延遲後結束教學
+            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
+        }
+    }
     public void OnPlayerSwitch()
     {
-        if (currentStep == TutorialState.Switch)
+        if (currentStep == TutorialState.V_Switch3)
         {
             switchMode_L.canSwitch = false;
             switchMode_R.canSwitch = false;
             controllerBtnEmmision.SetBlinking(false);
-            // 延遲後結束教學
             StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
         }
     }
-
-    public void OnPlayerSwitchBack()
+    public void OnPlayerShoot()
     {
-        if (currentStep == TutorialState.SwitchBack)
+        if (currentStep == TutorialState.V_Shoot2)
         {
-            controllerBtnEmmision.SetBlinking(false);
-            // 延遲後結束教學
+            // 延遲後進入防禦教學
             StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(PlayFinishTutor());
         }
     }
-
-    public void SkipTutorial()
+    public void OnSkipTutorial()
     {
-        StartCoroutine(NextStepWithDelay(3f));
+        StartCoroutine(NextStepWithDelay(0f));
     }
+
+
+
 
 
     // Update is called once per frame
     void Update()
     {
-        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left || controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right)
-        // if (Mathf.Abs(turnHeadByThumbstick.thumbstickX) > 0.5 || Mathf.Abs(turnHeadByThumbstick.thumbstickY) > 0.5)
+        if (cameraVisibilityWithViewport_L.isInView || cameraVisibilityWithViewport_R.isInView)
         {
-            if (!isVision)
+            if (currentStep == TutorialState.V_Hand1)
             {
-                isVision = true;
-                OnPlayerVision();
+                frequency = frequency + Time.deltaTime;
+                if (!isHand && frequency >= 2)
+                {
+                    isHand = true;
+                    OnPlayerHand();
+                    frequency = 0;
+                }
             }
         }
 
-        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Front || controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Back)
-        // if (Mathf.Abs(moveForwardByThumbstick.thumbstickX) > 0.5 || Mathf.Abs(moveForwardByThumbstick.thumbstickY) > 0.5)
+        // if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left || controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right)
+        // if (Mathf.Abs(turnHeadByThumbstick.thumbstickX) > 0.5 || Mathf.Abs(turnHeadByThumbstick.thumbstickY) > 0.5)
+        // {
+        //     if (!isVision1)
+        //     {
+        //         isVision1 = true;
+        //         OnPlayerVision();
+        //     }
+        // }
+
+        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left && currentStep == TutorialState.V_Vision1)
         {
-            if (!isMoved)
+            frequency = frequency + Time.deltaTime;
+            if (!isVision1 && frequency >= 2)
             {
-                isMoved = true;
-                OnPlayerMove();
+                isVision1 = true;
+                OnPlayerVision();
+                frequency = 0;
+            }
+        }
+
+        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right && currentStep == TutorialState.V_Vision2)
+        {
+            frequency = frequency + Time.deltaTime;
+            if (!isVision2)
+            {
+                isVision2 = true;
+                OnPlayerVision();
+                frequency = 0;
+            }
+        }
+
+        if (moveToEnemyTrigger_Forward.moveToEnemy && currentStep == TutorialState.V_Forward)
+        {
+            if (!isForwarded)
+            {
+                isForwarded = true;
+                OnPlayerForward();
+            }
+        }
+
+        if (vRRig_Test.leftHand.attacking || vRRig_Test.rightHand.attacking)
+        {
+            if (!isPunched)
+            {
+                isPunched = true;
+                OnPlayerPunch();
+            }
+        }
+
+        if (moveToEnemyTrigger_Backward.moveToEnemy && currentStep == TutorialState.V_Backward)
+        {
+            if (!isBackwarded)
+            {
+                isBackwarded = true;
+                OnPlayerBackward();
             }
         }
 
@@ -423,36 +537,19 @@ public class TutorialManage : MonoBehaviour
             OnPlayerShoot();
         }
 
-        if (!switchMode_L.gunMode && !switchMode_R.gunMode)
-        {
-            if (!isSwitchBacked)
-            {
-                isSwitchBacked = true;
-                OnPlayerSwitchBack();
-            }
-        }
-
-        if (moveToEnemyTrigger.moveToEnemy)
-        {
-            if (!isMoveToEnemy)
-            {
-                isMoveToEnemy = true;
-                OnMoveToEnemy();
-            }
-        }
-
-        if (vRRig_Test.leftHand.attacking || vRRig_Test.rightHand.attacking)
-        {
-            if (!isPunched)
-            {
-                isPunched = true;
-                OnPlayerPunch();
-            }
-        }
+        // if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Front || controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Back)
+        // // if (Mathf.Abs(moveForwardByThumbstick.thumbstickX) > 0.5 || Mathf.Abs(moveForwardByThumbstick.thumbstickY) > 0.5)
+        // {
+        //     if (!isForwarded)
+        //     {
+        //         isForwarded = true;
+        //         OnPlayerMove();
+        //     }
+        // }
 
         if (Input.GetKeyDown("k"))
         {
-            SkipTutorial();
+            OnSkipTutorial();
         }
 
         if (Input.GetKeyDown("l"))

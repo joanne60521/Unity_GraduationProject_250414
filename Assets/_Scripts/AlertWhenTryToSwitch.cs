@@ -10,7 +10,7 @@ public class AlertWhenTryToSwitch : MonoBehaviour
 
     void Update()
     {
-        if (switchMode_edit.vrInput && tutorialManage.currentStep == TutorialManage.TutorialState.MoveTo)
+        if (switchMode_edit.vrInput && tutorialManage.currentStep == TutorialManage.TutorialState.V_Backward)
         {
             Debug.Log("Please follow the instruction.");
             audioSource.Play();

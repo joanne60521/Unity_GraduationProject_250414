@@ -152,8 +152,6 @@ public class VRMap_Hand
                 rigTarget.localPosition = rigTarget.localPosition;
             }
             rigTarget.localRotation = Quaternion.Lerp(rigTarget.localRotation, vrTarget.localRotation * Quaternion.Euler(trackingRotationOffset), delay * Time.deltaTime);
-            // moveTargetPos = (vrTarget.position - playerOriginMainCam.position) * scaleUp + playerOriginMainCam.position;
-            // rb.Move(moveTargetPos, vrTarget.rotation);
             reachEnemy = false;
         }
     }
