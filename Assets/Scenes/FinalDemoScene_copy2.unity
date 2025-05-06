@@ -775,6 +775,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &50741949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50741943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50741945}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &57877915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6323,6 +6353,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1585699268}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1585699272}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &268849026
 GameObject:
@@ -14005,6 +14039,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 836737675}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 836737679}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &579452316 stripped
 GameObject:
@@ -16424,6 +16462,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 50741945}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 50741949}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &673629306
 GameObject:
@@ -17070,6 +17112,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &678781548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678781542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 678781544}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &679983878
 GameObject:
   m_ObjectHideFlags: 0
@@ -20151,6 +20223,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 678781544}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678781548}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &803058960 stripped
 GameObject:
@@ -21156,6 +21232,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &836737679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836737673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836737675}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &850448580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5660652243347339769, guid: 44d501d6d794cb04cbc664bbde95546c,
@@ -22471,6 +22577,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1266100013}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266100017}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1001 &911781136
 PrefabInstance:
@@ -26643,6 +26753,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1208262211}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1208262215}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &1062271233
 GameObject:
@@ -28489,6 +28603,7 @@ MonoBehaviour:
     rigTarget: {fileID: 566038523}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
   leftHand:
+    punchCount: 0
     ScaleUp: {fileID: 506228801}
     temp: {fileID: 777629767}
     vrTarget: {fileID: 2100814115}
@@ -28520,6 +28635,7 @@ MonoBehaviour:
     braked: 0
     velocityMag: 0
   rightHand:
+    punchCount: 0
     ScaleUp: {fileID: 506228801}
     temp: {fileID: 2014303878}
     vrTarget: {fileID: 475419607}
@@ -29612,6 +29728,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1208262215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208262209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1208262211}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1210211861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363000815121756, guid: 61bb62591466c3649bdf4905822d72f6,
@@ -30966,6 +31112,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2053477139}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2053477143}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1 &1256326102
 GameObject:
@@ -31682,6 +31832,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1266100017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266100011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1266100013}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1269249043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7845532927594448073, guid: 44d501d6d794cb04cbc664bbde95546c,
@@ -41517,6 +41697,7 @@ GameObject:
   - component: {fileID: 1490468522}
   - component: {fileID: 1490468523}
   - component: {fileID: 1490468524}
+  - component: {fileID: 1490468525}
   m_Layer: 0
   m_Name: Cameras
   m_TagString: Untagged
@@ -41586,6 +41767,51 @@ MonoBehaviour:
   animator_robot: {fileID: 1167750478}
   amplitude: 0.3
   smoothTime: 0.25
+--- !u!114 &1490468525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490468521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 8c8107ba272895b488f85087d846fc52, type: 2}
+    - {fileID: 11400000, guid: 9f26c369e26307a4f96e52cd5ba96025, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1490468524}
+          m_TargetAssemblyTypeName: CameraShakeWhenFire, Assembly-CSharp
+          m_MethodName: SignalTriggerShakeJet
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1490468524}
+          m_TargetAssemblyTypeName: CameraShakeWhenFire, Assembly-CSharp
+          m_MethodName: SignalTriggerShakeJetSmaller
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1491517857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43138,6 +43364,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1585699272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585699266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1585699268}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1592894680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1595897025017145184, guid: 44d501d6d794cb04cbc664bbde95546c,
@@ -43793,6 +44049,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1616721286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616721280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1616721282}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1620544467
 GameObject:
   m_ObjectHideFlags: 0
@@ -56439,6 +56725,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1616721282}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09bc2ec8a3d6e404abed0518f4498c74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1616721286}
   m_SourcePrefab: {fileID: 100100000, guid: 09bc2ec8a3d6e404abed0518f4498c74, type: 3}
 --- !u!1001 &1946268691
 PrefabInstance:
@@ -59269,6 +59559,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2053477143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053477137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ed5c741c08b2064da5637597c930741, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2053477139}
+          m_TargetAssemblyTypeName: Jet_shooting, Assembly-CSharp
+          m_MethodName: TriggerShoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2056468763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61317,6 +61637,30 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -4462475988856203642, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
     value: {fileID: 1810874333}
+  - key: {fileID: 3594523374830625424, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1585699272}
+  - key: {fileID: 6373777459700511757, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1208262215}
+  - key: {fileID: -6207087398034740756, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1490468525}
+  - key: {fileID: 1024433996284679449, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1220310960}
+  - key: {fileID: 7310346886095416689, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 747438004}
+  - key: {fileID: 2710573984530812608, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 615640355}
+  - key: {fileID: -1589398021594094942, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1266100017}
+  - key: {fileID: -1701081406648204928, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 1616721286}
+  - key: {fileID: 516656365877333811, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 836737679}
+  - key: {fileID: -1055493460619871020, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 2053477143}
+  - key: {fileID: 3691938787988048244, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 50741949}
+  - key: {fileID: -7724777316792162024, guid: 825222af8d261434eb42247f2b6f4af0, type: 2}
+    value: {fileID: 678781548}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2146039935

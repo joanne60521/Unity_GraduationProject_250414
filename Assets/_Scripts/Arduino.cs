@@ -20,8 +20,8 @@ public class Arduino : MonoBehaviour
     private bool triggerPressed;
     private bool triggerPressed1;
     public CameraShakeWhenFire cameraShakeWhenFire;
-    public GunFire gunFire;
-    public GunFire gunFire1;
+    public GunFire gunFire_L;
+    public GunFire gunFire_R;
     public int bulletCount_L = 0;
     public int bulletCount_R = 0;
     public TextMeshProUGUI BulletNum_L;
@@ -76,7 +76,7 @@ public class Arduino : MonoBehaviour
                         Debug.Log("sp3.Write: 1");
                         // sp3.Write("2");
                     }
-                    gunFire.Shoot();
+                    gunFire_R.Shoot();
                     bulletCount_R++;
                     BulletNum_R.text = (switchMode_R.maxBullet - bulletCount_R).ToString();
                     cameraShakeWhenFire.TriggerShake();
@@ -104,7 +104,7 @@ public class Arduino : MonoBehaviour
                         sp3.Write("4");  // shoot
                         Debug.Log("sp3.Write: 4");
                     }
-                    gunFire1.Shoot();
+                    gunFire_L.Shoot();
                     bulletCount_L++;
                     BulletNum_L.text = (switchMode_L.maxBullet - bulletCount_L).ToString();
                     cameraShakeWhenFire.TriggerShake();
@@ -146,9 +146,9 @@ public class Arduino : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown("a") && Time.time >= nextTimeToFire && bulletCount_R < switchMode_R.maxBullet && canShoot)  // right gun
+        if (Input.GetKeyDown("a") && Time.time >= nextTimeToFire && bulletCount_R < switchMode_R.maxBullet && switchMode_R.gunMode && canShoot)  // right gun
         {
-            gunFire.Shoot();
+            gunFire_R.Shoot();
             if (sp3.IsOpen)
                 {
                     sp3.Write("1");  // shoot
@@ -156,6 +156,19 @@ public class Arduino : MonoBehaviour
                 }
             bulletCount_R++;
             BulletNum_R.text = (switchMode_R.maxBullet - bulletCount_R).ToString();
+            cameraShakeWhenFire.TriggerShake();
+
+        }
+        if (Input.GetKeyDown("z") && Time.time >= nextTimeToFire && bulletCount_L < switchMode_L.maxBullet && switchMode_L.gunMode && canShoot)  // left gun
+        {
+            gunFire_L.Shoot();
+            if (sp3.IsOpen)
+                {
+                    sp3.Write("4");  // shoot
+                    Debug.Log("sp3.Write: 4");
+                }
+            bulletCount_L++;
+            BulletNum_L.text = (switchMode_L.maxBullet - bulletCount_L).ToString();
             cameraShakeWhenFire.TriggerShake();
 
         }

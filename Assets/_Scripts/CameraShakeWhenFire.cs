@@ -48,6 +48,15 @@ public class CameraShakeWhenFire : MonoBehaviour
         TriggerShake(2f, 0.7f);
     }
 
+    public void SignalTriggerShakeJet()
+    {
+        TriggerShake(1f, 0.7f);
+    }
+    public void SignalTriggerShakeJetSmaller()
+    {
+        TriggerShake(1f, 0.3f);
+    }
+
     void Update()
     {
         if (remainingShakeTime > 0)

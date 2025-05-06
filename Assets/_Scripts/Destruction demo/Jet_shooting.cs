@@ -49,4 +49,14 @@ public class Jet_shooting : MonoBehaviour
         
     }
 
+    public void TriggerShoot()
+    {
+        if (shootAble)
+            {
+                shootAble = false;
+                Shoot ();
+                StartCoroutine (ShootingYield ());
+            }
+    }
+
 }

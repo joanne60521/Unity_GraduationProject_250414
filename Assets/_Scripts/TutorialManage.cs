@@ -34,6 +34,7 @@ public class TutorialManage : MonoBehaviour
     public Texture[] tutorialTextures; // 放入所有教學示意圖
     public VideoClip[] tutorialVideoClips;
     public AudioClip[] tutorialAudioClips;
+    public GameObject[] tutorialCards;
     public GameObject enemy; // 敵人
     public Volume globalVolume; // 拖入場景中的 Global Volume
     private ColorAdjustments colorAdjustments;
@@ -138,6 +139,11 @@ public class TutorialManage : MonoBehaviour
         vRRig_Test.enabled = true;
         isHand = false;
         barCanMove = true;
+
+        tutorialCards[0].SetActive(true);
+        tutorialCards[1].SetActive(true);
+        tutorialCards[19].SetActive(true);
+        tutorialCards[20].SetActive(true);
     }
 
 
@@ -156,6 +162,12 @@ public class TutorialManage : MonoBehaviour
                 currentStep = TutorialState.Hand2;
                 StartCoroutine(PlayTutorialAudio((int)currentStep, 0));
                 StartCoroutine(NextStepWithDelay(5));
+
+                tutorialCards[0].SetActive(false);
+                tutorialCards[1].SetActive(false);
+                tutorialCards[19].SetActive(false);
+                tutorialCards[20].SetActive(false);
+                tutorialCards[2].SetActive(true);
                 break;
 
             case TutorialState.Hand2:
@@ -171,6 +183,9 @@ public class TutorialManage : MonoBehaviour
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+
+                tutorialCards[2].SetActive(false);
+                tutorialCards[3].SetActive(true);
                 break;
 
             case TutorialState.V_Vision1:
@@ -181,6 +196,9 @@ public class TutorialManage : MonoBehaviour
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+
+                tutorialCards[3].SetActive(false);
+                tutorialCards[4].SetActive(true);
                 break;
 
             case TutorialState.V_Vision2:
@@ -196,6 +214,9 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = 0;
                 barCanMove = true;
                 tutorialBar.maxHp = (PlayerRobot.position - Enemy.position).magnitude - vRRig_Test.leftHand.distanceThreshold;
+                
+                tutorialCards[4].SetActive(false);
+                tutorialCards[5].SetActive(true);
                 break;
 
             case TutorialState.V_Forward:
@@ -203,6 +224,9 @@ public class TutorialManage : MonoBehaviour
                 StartCoroutine(PlayTutorialAudio((int)currentStep, 0));
                 ShowTutorial(4);
                 StartCoroutine(NextStepWithDelay(5));
+                
+                tutorialCards[5].SetActive(false);
+                tutorialCards[6].SetActive(true);
                 break;
 
             case TutorialState.Punch1:
@@ -216,6 +240,12 @@ public class TutorialManage : MonoBehaviour
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+
+                tutorialCards[6].SetActive(false);
+                tutorialCards[7].SetActive(true);
+                tutorialCards[8].SetActive(true);
+                tutorialCards[19].SetActive(true);
+                tutorialCards[20].SetActive(true);
                 break;
 
             case TutorialState.V_Punch2:
@@ -223,11 +253,17 @@ public class TutorialManage : MonoBehaviour
                 StartCoroutine(PlayTutorialAudio((int)currentStep, 0));
                 // PauseGame(true, 0);
                 ShowTutorial(5);
-                controlRobotByGyroscope.canBackward = false;
+                controlRobotByGyroscope.canBackward = true;
                 isBackwarded = false;
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+                
+                tutorialCards[7].SetActive(false);
+                tutorialCards[8].SetActive(false);
+                tutorialCards[19].SetActive(false);
+                tutorialCards[20].SetActive(false);
+                tutorialCards[9].SetActive(true);
                 break;
 
             case TutorialState.V_Backward:
@@ -237,12 +273,18 @@ public class TutorialManage : MonoBehaviour
                 // ShowMessage("現在按下任一發光按鈕切換成槍擊模式！", 2);
                 ShowTutorial(6);
                 StartCoroutine(NextStepWithDelay(5));
+                
+                tutorialCards[9].SetActive(false);
+                tutorialCards[10].SetActive(true);
                 break;
 
             case TutorialState.Switch1:
                 currentStep = TutorialState.Switch2;
                 StartCoroutine(PlayTutorialAudio((int)currentStep, 0));
                 StartCoroutine(NextStepWithDelay(5));
+                
+                tutorialCards[10].SetActive(false);
+                tutorialCards[11].SetActive(true);
                 break;
 
             case TutorialState.Switch2:
@@ -255,6 +297,15 @@ public class TutorialManage : MonoBehaviour
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+                                
+                tutorialCards[11].SetActive(false);                
+                tutorialCards[12].SetActive(true);
+                tutorialCards[13].SetActive(true);
+                tutorialCards[19].SetActive(true);
+                tutorialCards[20].SetActive(true);
+
+                tutorialCards[17].SetActive(true);
+                tutorialCards[18].SetActive(true);
                 break;
 
             case TutorialState.V_Switch3:
@@ -262,6 +313,15 @@ public class TutorialManage : MonoBehaviour
                 StartCoroutine(PlayTutorialAudio((int)currentStep, 0));
                 ShowTutorial(7);
                 StartCoroutine(NextStepWithDelay(5));
+
+                tutorialCards[12].SetActive(false);
+                tutorialCards[13].SetActive(false);
+                tutorialCards[19].SetActive(false);
+                tutorialCards[20].SetActive(false);
+                tutorialCards[14].SetActive(true);
+
+                tutorialCards[17].SetActive(false);
+                tutorialCards[18].SetActive(false);
                 break;
 
             case TutorialState.Shoot1:
@@ -274,6 +334,12 @@ public class TutorialManage : MonoBehaviour
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
+
+                tutorialCards[14].SetActive(false);
+                tutorialCards[15].SetActive(true);
+                tutorialCards[16].SetActive(true);
+                tutorialCards[19].SetActive(true);
+                tutorialCards[20].SetActive(true);
                 break;
 
             case TutorialState.V_Shoot2:
@@ -282,6 +348,11 @@ public class TutorialManage : MonoBehaviour
                 // PauseGame(false, 0); // 教學結束，恢復敵人
                 bulletScript.damage = 20;
                 attackedTimeline.Play();
+
+                tutorialCards[15].SetActive(false);
+                tutorialCards[16].SetActive(false);
+                tutorialCards[19].SetActive(false);
+                tutorialCards[20].SetActive(false);
                 break;
 
         }
@@ -466,8 +537,6 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Switch3)
         {
-            switchMode_L.canSwitch = false;
-            switchMode_R.canSwitch = false;
             controllerBtnEmmision.SetBlinking(false);
             StartCoroutine(NextStepWithDelay(3f));
             PlayFinishTutorSound();
