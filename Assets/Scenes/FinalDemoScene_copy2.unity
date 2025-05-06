@@ -7612,12 +7612,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edaeb167a0445342b0a6c769b524809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vRRig_Test: {fileID: 1167750481}
   hideImg: 0
   delay: 1.5
   scaleSize: 2
   cubeEnemyVisibility: {fileID: 1167750487}
   playerOriginMainCam: {fileID: 1736362489}
-  distanceThreshold: 18
   imgScaleUp: 0
   cubeEnemy: {fileID: 4916901748906306675}
   scaleUp: {fileID: 765878332}
@@ -24634,6 +24634,9 @@ MonoBehaviour:
   - 0
   canMove: 1
   canTurn: 1
+  canForward: 1
+  canBackward: 1
+  tryToBackward: 0
   isMoving: 0
 --- !u!64 &1039653001
 MeshCollider:
@@ -26770,6 +26773,7 @@ MonoBehaviour:
     velocityValueZ: 0
     attacking: 0
     attackMode: 1
+    distance: 0
     cubeEnemyVisibility: {fileID: 1167750487}
     velContinueTime: 0
     velContinueTimeThreshold: 0.1
@@ -26800,6 +26804,7 @@ MonoBehaviour:
     velocityValueZ: 0
     attacking: 0
     attackMode: 1
+    distance: 0
     cubeEnemyVisibility: {fileID: 1167750487}
     velContinueTime: 0
     velContinueTimeThreshold: 0.1

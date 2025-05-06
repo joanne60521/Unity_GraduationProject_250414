@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ScaleUpImg : MonoBehaviour
 {
+    public VRRig_test vRRig_Test;
     public bool hideImg = false;
     private RectTransform rectTransform;
     private UnityEngine.UI.Image image;
@@ -15,7 +16,7 @@ public class ScaleUpImg : MonoBehaviour
 
     public CubeEnemyVisibility cubeEnemyVisibility;
     public Transform playerOriginMainCam;
-    public float distanceThreshold = 20f;
+    private float distanceThreshold = 20f;
     public bool imgScaleUp = false;
     public GameObject cubeEnemy;
     public ScaleUp scaleUp;
@@ -25,6 +26,8 @@ public class ScaleUpImg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        distanceThreshold = vRRig_Test.leftHand.distanceThreshold;
+
         rectTransform = GetComponent<RectTransform>();
         image = GetComponent<UnityEngine.UI.Image>();
         if (hideImg)

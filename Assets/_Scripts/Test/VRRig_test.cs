@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 [System.Serializable]  //讓 class VRMap 顯示在 Inspector
 public class VRMap_Hand
 {
+    [HideInInspector] public int punchCount = 0;
     public ScaleUp ScaleUp;
     public temp temp;
     public Transform vrTarget;
@@ -38,7 +39,7 @@ public class VRMap_Hand
     [HideInInspector]public bool attacking = false;
     public bool attackMode = false;
 
-    private float distance;
+    public float distance;
     public CubeEnemyVisibility cubeEnemyVisibility;
 
     [SerializeField]private float velContinueTime = 0;
@@ -93,6 +94,7 @@ public class VRMap_Hand
                     brake = true;
                     braked = true;
                     Debug.Log("brake = " + brake);
+                    punchCount++;
                 }else
                 {
                     brake = false;

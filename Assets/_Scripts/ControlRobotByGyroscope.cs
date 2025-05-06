@@ -20,6 +20,9 @@ public class ControlRobotByGyroscope : MonoBehaviour
 
     [HideInInspector] public bool canMove = true;
     [HideInInspector] public bool canTurn = true;
+    [HideInInspector] public bool canForward = true;
+    [HideInInspector] public bool canBackward = true;
+    [HideInInspector] public bool tryToBackward = false;
     public bool isMoving = false;
     
 
@@ -30,14 +33,14 @@ public class ControlRobotByGyroscope : MonoBehaviour
 
     void Update()
     {
-        if (gy.prFlt1[0] > forwardThreshold && gy.prFlt2[0] > forwardThreshold && canMove)
+        if (gy.prFlt1[0] > forwardThreshold && gy.prFlt2[0] > forwardThreshold && canMove && canForward)
         {
             // move forward
             gyState = GyState.Front;
             characterController.Move(transform.forward * speed * Time.deltaTime);
             isMoving = true;
         }
-        else if (gy.prFlt1[0] < backwardThreshold && gy.prFlt2[0] < backwardThreshold && canMove)
+        else if (gy.prFlt1[0] < backwardThreshold && gy.prFlt2[0] < backwardThreshold && canMove && canBackward)
         {
             // move backward
             gyState = GyState.Back;
@@ -65,32 +68,47 @@ public class ControlRobotByGyroscope : MonoBehaviour
             isMoving = false;
         }
 
+
+
+
+        if (gy.prFlt1[0] < backwardThreshold && gy.prFlt2[0] < backwardThreshold && !canBackward)
+        {
+            tryToBackward = true;
+        }
+        else
+        {
+            tryToBackward = false;
+        }
+
+
+
+
         gyroscpoeFlt[0] = gy.prFlt1[0];
         gyroscpoeFlt[1] = gy.prFlt2[0];
         // Debug.Log("gyroscpoeFlt = " + gyroscpoeFlt[0] + "  ,  " + gyroscpoeFlt[1]);
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && canMove && canForward)
         {
             // move forward
             gyState = GyState.Front;
             characterController.Move(transform.forward * speed * Time.deltaTime);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) && canMove && canBackward)
         {
             // move backward
             gyState = GyState.Back;
             characterController.Move(transform.forward * -1 * speed * Time.deltaTime);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))  // 左前右後
+        else if (Input.GetKey(KeyCode.LeftArrow) && canTurn)  // 左前右後
         {
             // turn left
             gyState = GyState.Left;
             transform.eulerAngles += new Vector3(0, -turnValue * Time.deltaTime, 0);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.RightArrow))  // 左後右前
+        else if (Input.GetKey(KeyCode.RightArrow) && canTurn)  // 左後右前
         {
             // turn right
             gyState = GyState.Right;
