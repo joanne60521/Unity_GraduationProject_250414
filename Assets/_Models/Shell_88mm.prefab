@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  lifeTime: 1000
+  lifeTime: 10
   particlePrefab: {fileID: 162584487599433031, guid: 39f852c28f9c3fd45a427c24f3564ba7,
     type: 3}
   explodEffectEmptyOB: {fileID: 6697899934676443194, guid: 607240258cf9bca48b376bfbc2c201a4,

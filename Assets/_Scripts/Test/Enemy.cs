@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class Enemy : MonoBehaviour
     public int enemyBulletNum = 0;
     public float shootRange = 1f;
     [Range(0.0f, -90.0f)] public float shootRotateY = -75;
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 200;
+    public Transform muzzlePos;
+    public VisualEffect Muzzleflash;
 
  
     private GameObject player;
@@ -118,6 +123,13 @@ public class Enemy : MonoBehaviour
     public void EnemyShoot()
     {
         enemyBulletNum--;
+        Muzzleflash.Play();
+        GameObject bullet = Instantiate(bulletPrefab, muzzlePos.position, muzzlePos.rotation);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = muzzlePos.forward * bulletSpeed;
+        }
     }
  
     private void OnDrawGizmos()
