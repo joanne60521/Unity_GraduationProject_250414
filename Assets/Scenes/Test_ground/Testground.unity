@@ -12983,7 +12983,6 @@ GameObject:
   m_Component:
   - component: {fileID: 593160471}
   - component: {fileID: 593160472}
-  - component: {fileID: 593160473}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -13020,25 +13019,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childCount: 0
   parentGameObject: {fileID: 0}
---- !u!320 &593160473
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593160469}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: ad4685e2307d90640b8e4ac3d0a05e9e, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 433961826641542988, guid: ad4685e2307d90640b8e4ac3d0a05e9e, type: 2}
-    value: {fileID: 2006318618}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1001 &593358612
 PrefabInstance:
   m_ObjectHideFlags: 0
