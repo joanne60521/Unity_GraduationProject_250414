@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.Playables;
 
-public class Shooting : MonoBehaviour {
-
+public class Jet_shooting : MonoBehaviour
+{
+    // Start is called before the first frame update    
     public GameObject theBullet;
     public Transform barrelEnd;
     public VisualEffect Muzzleflash;
@@ -43,9 +44,9 @@ public class Shooting : MonoBehaviour {
         var bullet = Instantiate (theBullet, barrelEnd.position, barrelEnd.rotation);
         bullet.GetComponent<Rigidbody> ().velocity = bullet.transform.forward * bulletSpeed;
     
-
-        Destroy (bullet, despawnTime);
         Muzzleflash.Play();
-
+        Destroy (bullet, despawnTime);
+        
     }
+
 }
