@@ -570,10 +570,10 @@ public class TutorialManage : MonoBehaviour
                 frequency = frequency + Time.deltaTime;
                 if (barCanMove)
                 {
-                    tutorialBar.maxHp = 2;
+                    tutorialBar.maxHp = 4;
                     tutorialBar.hp = frequency;
                 }
-                if (!isHand && frequency >= 2)
+                if (!isHand && frequency >= 4 && !audioSource.isPlaying)
                 {
                     isHand = true;
                     OnPlayerHand();
@@ -592,7 +592,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = frequency;
             }
 
-            if (!isVision1 && frequency >= 1.5f)
+            if (!isVision1 && frequency >= 1.5f && !audioSource.isPlaying)
             {
                 isVision1 = true;
                 OnPlayerVision1();
@@ -610,7 +610,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = frequency;
             }
 
-            if (!isVision2 && frequency >= 1.5f)
+            if (!isVision2 && frequency >= 1.5f && !audioSource.isPlaying)
             {
                 isVision2 = true;
                 OnPlayerVision2();
@@ -626,7 +626,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = tutorialBar.maxHp - ((PlayerRobot.position - Enemy.position).magnitude - vRRig_Test.leftHand.distanceThreshold);
             }
 
-            if (!isForwarded && (PlayerRobot.position - Enemy.position).magnitude < vRRig_Test.leftHand.distanceThreshold)
+            if (!isForwarded && (PlayerRobot.position - Enemy.position).magnitude < vRRig_Test.leftHand.distanceThreshold && !audioSource.isPlaying)
             {
                 Debug.Log(vRRig_Test.leftHand.distance);
                 Debug.Log(vRRig_Test.leftHand.distanceThreshold);
@@ -644,7 +644,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = vRRig_Test.leftHand.punchCount + vRRig_Test.rightHand.punchCount;
             }
 
-            if (!isPunched && (vRRig_Test.leftHand.punchCount + vRRig_Test.rightHand.punchCount) >= 3)
+            if (!isPunched && (vRRig_Test.leftHand.punchCount + vRRig_Test.rightHand.punchCount) >= 3 && !audioSource.isPlaying)
             {
                 isPunched = true;
                 OnPlayerPunch();
@@ -660,7 +660,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.hp = frequency;
             }
 
-            if (!isBackwarded && frequency >= 4)
+            if (!isBackwarded && frequency >= 4 && !audioSource.isPlaying)
             {
                 isBackwarded = true;
                 OnPlayerBackward();
@@ -671,7 +671,7 @@ public class TutorialManage : MonoBehaviour
 
         if (switchMode_L.gunMode || switchMode_R.gunMode)
         {
-            if (!isSwitched)
+            if (!isSwitched && !audioSource.isPlaying)
             {
                 isSwitched = true;
                 OnPlayerSwitch();
@@ -685,7 +685,7 @@ public class TutorialManage : MonoBehaviour
                 tutorialBar.maxHp = 4;
                 tutorialBar.hp = arduino.bulletCount_L + arduino.bulletCount_R;
             }
-            if (!isShooted && arduino.bulletCount_L + arduino.bulletCount_R >= 4)
+            if (!isShooted && arduino.bulletCount_L + arduino.bulletCount_R >= 4 && !audioSource.isPlaying)
             {
                 isShooted = true;
                 OnPlayerShoot();

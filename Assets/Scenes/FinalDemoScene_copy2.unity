@@ -3192,7 +3192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.531, y: 17.999874}
+  m_AnchoredPosition: {x: 65.431, y: 17.999874}
   m_SizeDelta: {x: 230.491, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &163610625
@@ -6268,6 +6268,7 @@ MonoBehaviour:
   specificCamera: {fileID: 261163346}
   targetObject: {fileID: 7294392325331295568}
   isInView: 0
+  height: 0
 --- !u!1001 &264091065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23139,7 +23140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24, y: 18}
+  m_AnchoredPosition: {x: -39.87896, y: 18}
   m_SizeDelta: {x: 230.491, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933501169
@@ -25468,7 +25469,9 @@ PrefabInstance:
       value: -70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5087078386508475528, guid: 3c773a6ed08c76c4fa0c2ba25aec8afd, type: 3}
+    - {fileID: -9112884991993687978, guid: 3c773a6ed08c76c4fa0c2ba25aec8afd, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c773a6ed08c76c4fa0c2ba25aec8afd,
         type: 3}
@@ -38231,7 +38234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.369, y: 17.999874}
+  m_AnchoredPosition: {x: -32.24796, y: 17.999874}
   m_SizeDelta: {x: 230.491, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330565149
@@ -39497,7 +39500,7 @@ Transform:
   m_GameObject: {fileID: 1395506517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.7, y: -0.89, z: 148.8}
+  m_LocalPosition: {x: -516.9, y: -0.89, z: 162.7}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -39681,9 +39684,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCD: 5
   attackRange: 18
-  aggroRange: 450
-  enemyBulletNum: 100
-  shootRange: 150.2
+  aggroRange: 362
+  enemyBulletNum: 10
+  shootRange: 108.4
   shootRotateY: -67.8
   bulletPrefab: {fileID: 293286748872223621, guid: 4def71caa197dc94a8be7f188e15cf63,
     type: 3}
@@ -39714,7 +39717,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.96
-  m_Speed: 1
+  m_Speed: 4
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -40383,8 +40386,8 @@ MonoBehaviour:
     type: 3}
   fireRate: 0.3
   cameraShakeWhenFire: {fileID: 1490468524}
-  gunFire_L: {fileID: 0}
-  gunFire_R: {fileID: 0}
+  gunFire_L: {fileID: 1193450888}
+  gunFire_R: {fileID: 1140813753}
   bulletCount_L: 0
   bulletCount_R: 0
   BulletNum_L: {fileID: 933501169}
@@ -40406,7 +40409,7 @@ Transform:
   m_GameObject: {fileID: 1431282203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13845249, y: 11.659367, z: -10.359431}
+  m_LocalPosition: {x: -0.329, y: 11.659367, z: -10.359431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42166,7 +42169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.9, y: 17.99997}
+  m_AnchoredPosition: {x: 57.8, y: 17.99997}
   m_SizeDelta: {x: 230.491, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1506606658
@@ -62753,7 +62756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCD: 5
   attackRange: 18
-  aggroRange: 450
+  aggroRange: 326.9
   enemyBulletNum: 0
   shootRange: 1
   shootRotateY: -75
@@ -63664,7 +63667,7 @@ Transform:
   m_GameObject: {fileID: 7294392325331295568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.7, y: -0.89, z: 338.5}
+  m_LocalPosition: {x: -360.9, y: -0.89, z: 267.1}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -68689,7 +68692,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.96
-  m_Speed: 1
+  m_Speed: 4
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
