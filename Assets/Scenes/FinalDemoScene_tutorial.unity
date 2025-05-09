@@ -6647,7 +6647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followed: {fileID: 1598494717}
-  offsetPos: {x: 0, y: 0.4, z: 0}
+  offsetPos: {x: 0, y: 0.3, z: 0}
 --- !u!64 &614871785
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8466,7 +8466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followed: {fileID: 2144782113}
-  offsetPos: {x: 0, y: 0.4, z: 0}
+  offsetPos: {x: 0, y: 0.3, z: 0}
 --- !u!1 &891272104
 GameObject:
   m_ObjectHideFlags: 0
@@ -12273,8 +12273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gy: {fileID: 1431282206}
-  forwardThreshold: 5
-  backwardThreshold: -5
+  forwardThreshold: -7
+  backwardThreshold: -17
   turnValue: 25
   speed: 15
   groundedPlayer: 0

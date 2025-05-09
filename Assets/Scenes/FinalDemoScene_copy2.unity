@@ -8015,6 +8015,7 @@ GameObject:
   - component: {fileID: 366761224}
   - component: {fileID: 366761225}
   - component: {fileID: 366761226}
+  - component: {fileID: 366761227}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8085,6 +8086,22 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   powerOff: 0
+--- !u!114 &366761227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366761222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8802eb029ea2d45ab5e017a5b3e59f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1798047241424815369}
+  target1: {fileID: 1395506519}
+  winTimeline: {fileID: 1068542686}
+  loseTimeline: {fileID: 621078896}
 --- !u!1001 &376333370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24560,6 +24577,8 @@ MonoBehaviour:
   functionManage: {fileID: 366761225}
   enemy: {fileID: 4418145394475076739}
   navMeshAgent: {fileID: 8745842980755886050}
+  enemy1: {fileID: 1395506523}
+  navMeshAgent1: {fileID: 1395506525}
   audioSourceTikTok: {fileID: 991752767}
 --- !u!4 &991752766
 Transform:
@@ -26481,8 +26500,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gy: {fileID: 1431282206}
-  forwardThreshold: 5
-  backwardThreshold: -5
+  forwardThreshold: -7
+  backwardThreshold: -12
   turnValue: 25
   speed: 15
   groundedPlayer: 0
@@ -28170,8 +28189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278233855
-  m_fontColor: {r: 1, g: 0.666701, b: 0, a: 1}
+    rgba: 43775
+  m_fontColor: {r: 1, g: 0.666701, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -28251,6 +28270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1798047241424815369}
+  target1: {fileID: 1395506519}
   showDuration: 5
 --- !u!1 &1149206974
 GameObject:

@@ -5,6 +5,7 @@ using UnityEngine;
 public class URWin : MonoBehaviour
 {
     public Target target;
+    public Target target1;
     private RectTransform rectTransform;
     private bool showed = false;
     public float showDuration = 3;
@@ -22,7 +23,7 @@ public class URWin : MonoBehaviour
     {
         if (!showed)
         {
-            if (target.health <= 0)
+            if (target.died && target1.died)
             {
                 Debug.Log("Win");
                 rectTransform.localScale = new Vector3(1, 1, 1);

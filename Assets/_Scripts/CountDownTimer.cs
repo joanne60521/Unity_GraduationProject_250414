@@ -16,6 +16,8 @@ public class CountdownTimer : MonoBehaviour
     public FunctionManage functionManage;
     public Enemy enemy;
     public NavMeshAgent navMeshAgent;
+    public Enemy enemy1;
+    public NavMeshAgent navMeshAgent1;
     public AudioSource audioSourceTikTok;
 
     void Start()
@@ -51,8 +53,17 @@ public class CountdownTimer : MonoBehaviour
             emissionPowerOff.powerOff = true;
             loseTimeline.Play();
             functionManage.AllFunctionOff();
-            enemy.attackRange = -1;
-            navMeshAgent.speed = 0;
+            if (enemy != null)
+            {
+                enemy.attackRange = -1;
+                navMeshAgent.speed = 0;
+            }
+            if (enemy1 != null)
+            {
+                enemy1.attackRange = -1;
+                enemy1.shootRange = -1;
+                navMeshAgent1.speed = 0;
+            }
         }
     }
 }

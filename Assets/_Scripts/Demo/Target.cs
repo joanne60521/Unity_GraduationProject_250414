@@ -51,6 +51,6 @@ public class Target : MonoBehaviour
         // win
         countdownTimer.enabled = false;
         audioSourceTikTok.Stop();
-        winTimeline.Play();
+        // winTimeline.Play();
     }
 }
