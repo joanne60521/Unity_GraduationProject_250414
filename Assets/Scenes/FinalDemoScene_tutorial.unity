@@ -12234,6 +12234,8 @@ MonoBehaviour:
     type: 3}
   turnValue: 20
   thumbstickX: 0
+  turnL: 0
+  turnR: 0
 --- !u!143 &1037819455
 CharacterController:
   m_ObjectHideFlags: 0

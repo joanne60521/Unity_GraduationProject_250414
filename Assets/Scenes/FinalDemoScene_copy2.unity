@@ -6253,6 +6253,10 @@ MonoBehaviour:
   - {fileID: 1395506518}
   playerTarget: {fileID: 1037819451}
   miniMapBoundThickness: 0.15
+  target: {fileID: 1798047241424815369}
+  target1: {fileID: 1395506519}
+  enemyIconG: {fileID: 1432280473}
+  enemyIconG1: {fileID: 2134441582}
 --- !u!114 &261163350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8102,6 +8106,7 @@ MonoBehaviour:
   target1: {fileID: 1395506519}
   winTimeline: {fileID: 1068542686}
   loseTimeline: {fileID: 621078896}
+  countdownTimer: {fileID: 0}
 --- !u!1001 &376333370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26461,6 +26466,8 @@ MonoBehaviour:
     type: 3}
   turnValue: 20
   thumbstickX: 0
+  turnL: 0
+  turnR: 0
 --- !u!143 &1037819455
 CharacterController:
   m_ObjectHideFlags: 0
@@ -39549,7 +39556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5efc5e56a732e498b42c68a96d0fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 100
   audioo: {fileID: 8300000, guid: d202a526420fede4881b95283c65974d, type: 3}
   particlePrefab: {fileID: 100004, guid: b46890100828db6429ff69c322b45893, type: 3}
   died: 0
@@ -62137,7 +62144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5efc5e56a732e498b42c68a96d0fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 100
   audioo: {fileID: 8300000, guid: d202a526420fede4881b95283c65974d, type: 3}
   particlePrefab: {fileID: 100004, guid: b46890100828db6429ff69c322b45893, type: 3}
   died: 0

@@ -9,6 +9,8 @@ public class TurnRobotByThumbstick : MonoBehaviour
     [SerializeField] float turnValue = 20;
 
     [HideInInspector]public float thumbstickX;
+    public bool turnL;
+    public bool turnR;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,23 @@ public class TurnRobotByThumbstick : MonoBehaviour
         if (Mathf.Abs(thumbstickX) > 0.2)
         {
             transform.eulerAngles += new Vector3(0, turnValue * Time.deltaTime * thumbstickX, 0);
+        }
+
+        if (thumbstickX > 0.2)
+        {
+            turnR = true;
+        }
+        else
+        {
+            turnR = false;
+        }
+        if (thumbstickX < -0.2)
+        {
+            turnL = true;
+        }
+        else
+        {
+            turnL = false;
         }
     }
 }

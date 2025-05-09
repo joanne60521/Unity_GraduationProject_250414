@@ -49,7 +49,7 @@ public class Target : MonoBehaviour
         // Destroy(gameObject, 1);
 
         // win
-        countdownTimer.enabled = false;
+        // countdownTimer.enabled = false;
         audioSourceTikTok.Stop();
         // winTimeline.Play();
     }

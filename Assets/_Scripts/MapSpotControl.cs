@@ -11,6 +11,10 @@ public class MapSpotControl : MonoBehaviour
     [SerializeField] Transform[] enemyTarget;     // 敵人 Transform
     [SerializeField] Transform playerTarget;
     [SerializeField] float miniMapBoundThickness = 0.15f;
+    public Target target;
+    public Target target1;
+    public GameObject enemyIconG;
+    public GameObject enemyIconG1;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,5 +82,14 @@ public class MapSpotControl : MonoBehaviour
         );
         playerIcon.anchoredPosition = playerLocalPos;
         playerIcon.localRotation = Quaternion.Euler(0, 0, -playerTarget.eulerAngles.y);
+
+        if (target.died)
+        {
+            enemyIconG.SetActive(false);
+        }
+        if (target1.died)
+        {
+            enemyIconG1.SetActive(false);
+        }
     }
 }

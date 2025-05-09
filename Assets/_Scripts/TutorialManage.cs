@@ -584,6 +584,7 @@ public class TutorialManage : MonoBehaviour
         }
 
         if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left && currentStep == TutorialState.V_Vision1)
+        // if (turnRobotByThumbstick.turnL && currentStep == TutorialState.V_Vision1)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)
@@ -602,6 +603,7 @@ public class TutorialManage : MonoBehaviour
         }
 
         if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right && currentStep == TutorialState.V_Vision2)
+        // if (turnRobotByThumbstick.turnR && currentStep == TutorialState.V_Vision2)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)
@@ -652,6 +654,7 @@ public class TutorialManage : MonoBehaviour
         }
 
         if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Back && currentStep == TutorialState.V_Backward)
+        // if (moveForwardByThumbstick.thumbstickY < -0.5 && currentStep == TutorialState.V_Backward)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)

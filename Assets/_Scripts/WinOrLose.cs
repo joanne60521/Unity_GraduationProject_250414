@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -9,6 +10,7 @@ public class WinOrLose : MonoBehaviour
     public Target target1;
     public PlayableDirector winTimeline;
     public PlayableDirector loseTimeline;
+    public CountdownTimer countdownTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class WinOrLose : MonoBehaviour
         if (target.died && target1.died)
         {
             winTimeline.Play();
+            countdownTimer.enabled = false;
         }
     }
 }

@@ -9,7 +9,7 @@ using System;
 public class Gyroscope : MonoBehaviour
 {
     // port control
-    string portName = "COM4";
+    string portName = "COM5";
     int baudRate = 115200;    // need to change the baudRate!
     Parity parity = Parity.None;
     int dataBits = 8;
