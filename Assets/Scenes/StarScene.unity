@@ -2558,6 +2558,7 @@ MonoBehaviour:
   rightSecondaryBtnReference: {fileID: 8667238371399840754, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   textLogo: {fileID: 654900653}
+  logo: {fileID: 147628917}
   textPressToStart: {fileID: 701452322}
   audioSourcePress: {fileID: 1792490014}
   fadeDuration: 1

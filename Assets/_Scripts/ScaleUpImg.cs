@@ -40,6 +40,7 @@ public class ScaleUpImg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cubeEnemy = cubeEnemyVisibility.closestEnemy;
         if (cubeEnemy != null)
         {
             distance = (cubeEnemy.transform.position - playerOriginMainCam.transform.position).magnitude;

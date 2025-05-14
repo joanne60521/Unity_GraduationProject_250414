@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+// using System.Drawing;
+using UnityEngine.UI;
 
 public class PressToStart : MonoBehaviour
 {
@@ -22,6 +24,7 @@ public class PressToStart : MonoBehaviour
     private ColorAdjustments colorAdjustments;
 
     public TextMeshProUGUI textLogo;
+    public Image logo;
     public TextMeshProUGUI textPressToStart;
     public AudioSource audioSourcePress;
 
@@ -65,6 +68,7 @@ public class PressToStart : MonoBehaviour
     {
         Color originColor = textLogo.color;
         Color originColor1 = textPressToStart.color;
+        Color originColor2 = logo.color;
 
         float t = 0;
         while (t < fadeDuration)
@@ -73,6 +77,7 @@ public class PressToStart : MonoBehaviour
             float alpha = Mathf.Lerp(1, 0, t / fadeDuration);
             textLogo.color = new Color(originColor.r, originColor.g, originColor.b, alpha);
             textPressToStart.color = new Color(originColor1.r, originColor1.g, originColor1.b, alpha);
+            logo.color = new Color(originColor2.r, originColor2.g, originColor2.b, alpha);
             yield return null;
         }
         SceneManager.LoadScene(1);

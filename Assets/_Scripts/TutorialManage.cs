@@ -77,12 +77,12 @@ public class TutorialManage : MonoBehaviour
     void Start()
     {
         // 關掉功能
-        turnHeadByThumbstick.enabled = false;
-        turnRobotByThumbstick.enabled = false;
-        moveForwardByThumbstick.enabled = false;
-        // controlRobotByGyroscope.canTurn = false;
-        // controlRobotByGyroscope.canMove = false;
-        // controlRobotByGyroscope.canBackward = false;
+        // turnHeadByThumbstick.enabled = false;
+        // turnRobotByThumbstick.enabled = false;
+        // moveForwardByThumbstick.enabled = false;
+        controlRobotByGyroscope.canTurn = false;
+        controlRobotByGyroscope.canMove = false;
+        controlRobotByGyroscope.canBackward = false;
         switchMode_L.canSwitch = false;
         switchMode_R.canSwitch = false;
         arduino.canShoot = false;
@@ -178,8 +178,8 @@ public class TutorialManage : MonoBehaviour
                 ShowTutorial(1);
                 isVision1 = false;
                 // turnHeadByThumbstick.enabled = true;
-                turnRobotByThumbstick.enabled = true;
-                // controlRobotByGyroscope.canTurn = true;
+                // turnRobotByThumbstick.enabled = true;
+                controlRobotByGyroscope.canTurn = true;
 
                 tutorialBar.hp = 0;
                 barCanMove = true;
@@ -207,8 +207,8 @@ public class TutorialManage : MonoBehaviour
                 // PauseGame(true, 0); // 進入教學時，先暫停敵人
                 // ShowMessage("移動\n雙腳往前踩 → 前進\n雙腳往後踩 → 後退", 1);
                 ShowTutorial(3);
-                moveForwardByThumbstick.enabled = true;
-                // controlRobotByGyroscope.canMove = true;
+                // moveForwardByThumbstick.enabled = true;
+                controlRobotByGyroscope.canMove = true;
                 isForwarded = false;
 
                 tutorialBar.hp = 0;
@@ -483,7 +483,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Hand1)
         {
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -492,7 +492,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Vision1)
         {
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -501,7 +501,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Vision2)
         {
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -510,7 +510,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Forward)
         {
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -519,7 +519,7 @@ public class TutorialManage : MonoBehaviour
     {
         if (currentStep == TutorialState.V_Punch2)
         {
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -529,7 +529,7 @@ public class TutorialManage : MonoBehaviour
         if (currentStep == TutorialState.V_Backward)
         {
             // 延遲後結束教學
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -538,7 +538,7 @@ public class TutorialManage : MonoBehaviour
         if (currentStep == TutorialState.V_Switch3)
         {
             controllerBtnEmmision.SetBlinking(false);
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -547,7 +547,7 @@ public class TutorialManage : MonoBehaviour
         if (currentStep == TutorialState.V_Shoot2)
         {
             // 延遲後進入防禦教學
-            StartCoroutine(NextStepWithDelay(3f));
+            StartCoroutine(NextStepWithDelay(0f));
             PlayFinishTutorSound();
         }
     }
@@ -583,8 +583,8 @@ public class TutorialManage : MonoBehaviour
             }
         }
 
-        // if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left && currentStep == TutorialState.V_Vision1)
-        if (turnRobotByThumbstick.turnL && currentStep == TutorialState.V_Vision1)
+        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Left && currentStep == TutorialState.V_Vision1)
+        // if (turnRobotByThumbstick.turnL && currentStep == TutorialState.V_Vision1)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)
@@ -602,8 +602,8 @@ public class TutorialManage : MonoBehaviour
             }
         }
 
-        // if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right && currentStep == TutorialState.V_Vision2)
-        if (turnRobotByThumbstick.turnR && currentStep == TutorialState.V_Vision2)
+        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Right && currentStep == TutorialState.V_Vision2)
+        // if (turnRobotByThumbstick.turnR && currentStep == TutorialState.V_Vision2)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)
@@ -653,8 +653,8 @@ public class TutorialManage : MonoBehaviour
             }
         }
 
-        // if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Back && currentStep == TutorialState.V_Backward)
-        if (moveForwardByThumbstick.thumbstickY < -0.5 && currentStep == TutorialState.V_Backward)
+        if (controlRobotByGyroscope.gyState == ControlRobotByGyroscope.GyState.Back && currentStep == TutorialState.V_Backward)
+        // if (moveForwardByThumbstick.thumbstickY < -0.5 && currentStep == TutorialState.V_Backward)
         {
             frequency = frequency + Time.deltaTime;
             if (barCanMove)
